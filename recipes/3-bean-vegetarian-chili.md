@@ -46,7 +46,6 @@ A hearty slow cooker vegetarian chili, made with three different beans and plent
 
 ## Personal Notes
 
-- Date tried:
-- Rating:
-- Make again:
-- Changes for next time:
+- Made it (Y/N): Y
+- Rating: 4/5
+- Notes: good to feed a crowd; can add more cans of beans, tomatoes, ground sausage, etc to stretch the recipe into 7-8 servings

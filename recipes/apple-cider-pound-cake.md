@@ -9,6 +9,7 @@ tags:
   - "autumn"
   - "american"
   - "cakes, quick breads, and muffins"
+  - "haley's favorite"
 source: "https://4sonrus.com/apple-cider-pound-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "12"
 prep_time: "10 min"
@@ -55,7 +56,5 @@ Apple cider pound cake is a rich buttery treat infused with festive flavor. Perf
 
 ## Personal Notes
 
-- Date tried:
-- Rating:
-- Make again:
-- Changes for next time:
+- Date tried: Fall 2025
+- Rating: 5/5

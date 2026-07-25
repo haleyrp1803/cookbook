@@ -1,0 +1,53 @@
+{
+  "source_url": "https://www.simplyrecipes.com/recipes/banana_bread/",
+  "name": "Banana Bread",
+  "description": "Put those ripe bananas to use in the best banana bread recipe ever. Moist and delicious, it’s easy to make—one bowl, no need for a mixer!",
+  "author": "Elise Bauer",
+  "image_url": "https://www.simplyrecipes.com/thmb/tR-5eHAZ3lgNR6Yvu3yxdHMNpk8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-2-63dd39af009945d58f5bf4c2ae8d6070.jpg",
+  "prep_time": "PT10M",
+  "cook_time": "PT60M",
+  "total_time": "PT70M",
+  "yield_text": "['10', '1 loaf']",
+  "category": "['Dessert', 'Baking', 'Banana', 'Quick Bread']",
+  "cuisine": "['American']",
+  "keywords": [
+    "Baking",
+    "Banana",
+    "Quick Bread",
+    "American"
+  ],
+  "ingredients": [
+    "2 to 3 very ripe bananas, peeled (about 1 1/4 to 1 1/2 cups mashed)",
+    "1/3 cup melted butter, unsalted or salted",
+    "1 teaspoon baking soda",
+    "Pinch of salt",
+    "3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)",
+    "1 large egg, beaten",
+    "1 teaspoon vanilla extract",
+    "1 1/2 cups of all-purpose flour"
+  ],
+  "instructions": [
+    "Butter an 8x4-inch loaf pan.",
+    "In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted butter into the mashed bananas.",
+    "Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in the flour.",
+    "Pour the batter into your prepared loaf pan. Bake for 55 to 65 minutes at 350°F (175°C), or until a toothpick or wooden skewer inserted into the center comes out clean. A few dry crumbs are okay; streaks of wet batter are not. If the outside of the loaf is browned but the center is still wet, loosely tent the loaf with foil and continue baking until the loaf is fully baked.",
+    "Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread from the pan and let cool completely before serving. Slice and serve. (A bread knife helps to make slices that aren’t crumbly.) Wrapped well, the banana bread will keep at room temperature for 4 days. For longer storage, refrigerate the loaf up to 5 days, or freeze it .",
+    "Enjoy!"
+  ],
+  "rating_value": "4.8",
+  "rating_count": "2160",
+  "nutrition": {
+    "calories": "220 kcal",
+    "carbohydrateContent": "37 g",
+    "cholesterolContent": "35 mg",
+    "fiberContent": "1 g",
+    "proteinContent": "3 g",
+    "saturatedFatContent": "4 g",
+    "sodiumContent": "85 mg",
+    "sugarContent": "19 g",
+    "fatContent": "7 g",
+    "transFatContent": "0 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "downloaded_image": "image.jpg"
+}

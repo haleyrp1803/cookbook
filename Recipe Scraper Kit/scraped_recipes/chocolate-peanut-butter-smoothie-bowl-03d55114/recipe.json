@@ -1,0 +1,52 @@
+{
+  "source_url": "https://www.bakerita.com/chocolate-peanut-butter-smoothie-bowl/",
+  "name": "Chocolate Peanut Butter Smoothie Bowl",
+  "description": "This Chocolate Peanut Butter Banana Smoothie Bowl tastes like a peanut butter cup, but it's actually a filling, superfood-packed breakfast that comes together in just 5 minutes! This gluten-free + vegan smoothie bowl is the perfect easy vegan breakfast.",
+  "author": "Rachel Conners",
+  "image_url": "https://www.bakerita.com/wp-content/uploads/2017/03/Chocolate-Peanut-Butter-Smoothie-Bowl-10.jpg",
+  "prep_time": "PT5M",
+  "cook_time": "",
+  "total_time": "PT5M",
+  "yield_text": "['1', '1 serving']",
+  "category": "['Breakfast']",
+  "cuisine": "['American']",
+  "keywords": [
+    "banana",
+    "chocolate",
+    "gluten free",
+    "peanut butter",
+    "smoothie",
+    "vegan"
+  ],
+  "ingredients": [
+    "2 frozen bananas",
+    "⅓ cup almond milk",
+    "2 tablespoons peanut butter",
+    "2 tablespoons cacao powder",
+    "2 scoops protein powder of your choice",
+    "2 teaspoons maca powder",
+    "1 tablespoon chia seeds (flax seeds, or hemp seeds)",
+    "½ banana (sliced)",
+    "Chocolate granola",
+    "Peanut butter (to drizzle)",
+    "Chia seeds"
+  ],
+  "instructions": [
+    "Combine bananas, almond milk, peanut butter, cacao powder, and collagen, maca powder, and chia seeds if using, in a blender (I used my Vitamix). Puree until completely smooth - the mixture should be thick. Add a touch more liquid if necessary to get it to blend completely smooth.",
+    "Transfer to a bowl and all of your favorite toppings. Serve immediately, and enjoy!"
+  ],
+  "rating_value": "5",
+  "rating_count": "7",
+  "nutrition": {
+    "servingSize": "1 bowl",
+    "calories": "485 kcal",
+    "sugarContent": "39 g",
+    "sodiumContent": "260 mg",
+    "fatContent": "19 g",
+    "saturatedFatContent": "4 g",
+    "carbohydrateContent": "79 g",
+    "fiberContent": "12 g",
+    "proteinContent": "13 g"
+  },
+  "downloaded_image": "image.jpg"
+}

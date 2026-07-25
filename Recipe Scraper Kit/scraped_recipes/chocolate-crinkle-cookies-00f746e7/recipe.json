@@ -1,0 +1,56 @@
+{
+  "source_url": "https://preppykitchen.com/chocolate-crinkle-cookies/",
+  "name": "Chocolate Crinkle Cookies",
+  "description": "Rich and fudgy Chocolate Crinkle Cookies are as fun to make as they are delicious and indulgent! Made using pantry staples and simple steps, these cookies are perfect to bake for the holidays or any time the craving hits.",
+  "author": "",
+  "image_url": "https://preppykitchen.com/wp-content/uploads/2023/09/Chocolate-Crinkle-Cookies-Recipe.jpg",
+  "prep_time": "PT15M",
+  "cook_time": "PT10M",
+  "total_time": "PT265M",
+  "yield_text": "['48', '48 cookies']",
+  "category": "['Dessert']",
+  "cuisine": "['American']",
+  "keywords": [
+    "chocolate Crinkle Cookies",
+    "chocolate crinkle cookies recipe",
+    "crinkle cookies recipe",
+    "how to make chocolate crinkle cookies"
+  ],
+  "ingredients": [
+    "1 cup unsweetened cocoa powder ((100g))",
+    "1¾ cups granulated sugar ((350g))",
+    "½ cup vegetable oil ((120mL))",
+    "4 large eggs (room temperature)",
+    "2 teaspoons vanilla extract",
+    "2 cups all-purpose flour ((240g))",
+    "2 teaspoons baking powder",
+    "¾ teaspoon salt",
+    "1 cup powdered sugar ((120g))"
+  ],
+  "instructions": [
+    "In a large mixing bowl using a hand mixer or the bowl of a stand mixer fitted with the paddle attachment, combine the sugar, cocoa powder, and oil. Beat on medium speed until well combined and shiny.",
+    "Add the eggs one at a time, beating until well combined. Beat in the vanilla.",
+    "Combine the flour, baking powder, and salt in a medium bowl, stirring to combine. Add the flour mixture to the cocoa mixture and mix on low speed just until combined.",
+    "Cover the dough in plastic wrap and refrigerate for at least 4 hours or up to overnight.",
+    "Once the dough has chilled, preheat oven to 350°F. Line two large baking sheets with parchment paper. Place the powdered sugar in a small bowl.",
+    "Using a small ice cream scoop or tablespoon, scoop the chilled dough and roll into roughly one-inch balls. Roll the dough balls in powdered sugar until well coated and place on the prepared baking sheet about 2 inches apart. (Only coat as many dough balls as you can fit on the baking sheets at one time. Refrigerate the remaining dough balls and roll in powdered sugar just before baking.)",
+    "Bake for 10 to 12 minutes or until the edges of the cookies are firm and the center is puffed but still appears slightly wet. Let them cool on the baking sheets for a few minutes then transfer to a wire rack to cool completely."
+  ],
+  "rating_value": "4.97",
+  "rating_count": "1107",
+  "nutrition": {
+    "calories": "87 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "1 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.02 g",
+    "cholesterolContent": "16 mg",
+    "sodiumContent": "61 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "10 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "downloaded_image": "image.jpg"
+}

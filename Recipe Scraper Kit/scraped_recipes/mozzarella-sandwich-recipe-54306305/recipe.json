@@ -1,0 +1,54 @@
+{
+  "source_url": "https://feelgoodfoodie.net/recipe/grilled-mozzarella-sandwich-walnut-pesto/?utm_source=Pinterest&utm_medium=organic",
+  "name": "Mozzarella Sandwich Recipe",
+  "description": "This Mozzarella Sandwich is made with fresh tomatoes, pesto and sourdough bread. It's a caprese panini-style sandwich that takes 15 mins to prep and make!",
+  "author": "",
+  "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2019/07/Grilled-Mozzarella-Sandwich-09.jpg",
+  "prep_time": "PT10M",
+  "cook_time": "PT5M",
+  "total_time": "PT15M",
+  "yield_text": "['4', '4 servings']",
+  "category": "['Sandwich']",
+  "cuisine": "['Italian']",
+  "keywords": [
+    "caprese pesto sandwich",
+    "caprese sandwich recipe",
+    "grilled mozzarella sandwich",
+    "Grilled Sandwich",
+    "Mozzarella Sandwich",
+    "mozzarella tomato sandwich"
+  ],
+  "ingredients": [
+    "4 slices sourdough bread",
+    "4 oz mozzarella cheese (sliced)",
+    "1 large tomato (sliced)",
+    "2 oz roasted red peppers (jarred)",
+    "1/2 cup fresh basil leaves",
+    "2 cloves garlic clove (peeled)",
+    "2 tablespoons walnuts",
+    "2 tablespoons Grated Parmesan cheese",
+    "Salt and pepper",
+    "1/4 cup olive oil"
+  ],
+  "instructions": [
+    "To make the pesto, place the basil, garlic, walnuts and Parmesan cheese in the food processor; season with salt and pepper, to taste, and blend. While the food processor is on, pour the olive oil slowly into the mixture in order to allow the olive oil to emulsify.",
+    "Spread the pesto equally on the 4 slices of bread and place two slices of bread on the panini maker or in a toaster oven for 2 minutes.",
+    "Then place the mozzarella cheese, tomatoes and roasted red peppers on top of two bread slices and allow the cheese to melt and the veggies to soften, keeping the panini maker open.",
+    "Once the cheese starts to melt, add the second slices on top to close the sandwiches, then close the panini maker for 2-3 minutes. Remove, slice in half and serve immediately"
+  ],
+  "rating_value": "5",
+  "rating_count": "929",
+  "nutrition": {
+    "servingSize": "1 g",
+    "calories": "449 kcal",
+    "carbohydrateContent": "41 g",
+    "proteinContent": "16 g",
+    "fatContent": "25 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "24 mg",
+    "sodiumContent": "742 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g"
+  },
+  "downloaded_image": "image.jpg"
+}

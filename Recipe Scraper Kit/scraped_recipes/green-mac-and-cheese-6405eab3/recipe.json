@@ -1,0 +1,52 @@
+{
+  "source_url": "https://thishealthytable.com/blog/green-mac-and-cheese/",
+  "name": "Green Mac and Cheese",
+  "description": "This fantastic and fun green mac and cheese will be a hit with the whole family! It's a great way to sneak some veggies into a pasta dish.",
+  "author": "This Healthy Table",
+  "image_url": "https://thishealthytable.com/wp-content/uploads/2023/06/green-mac-and-cheese-recipes-720x720.jpg",
+  "prep_time": "PT10M",
+  "cook_time": "PT10M",
+  "total_time": "PT20M",
+  "yield_text": "6",
+  "category": "Main Meal Recipes",
+  "cuisine": "American",
+  "keywords": [
+    "green mac and cheese",
+    "spinach cauliflower mac and cheese",
+    "green pasta",
+    "spinach mac and cheese"
+  ],
+  "ingredients": [
+    "1 head of cauliflower (or 4 cups frozen cauliflower)",
+    "1 pound pasta (small shape of your choice)",
+    "2 cups baby spinach",
+    "1 cup of milk (whole milk, skim milk, or oat milk)",
+    "1 1/2 cups shredded cheddar cheese",
+    "1 teaspoon kosher salt",
+    "1/4 teaspoon ground black pepper"
+  ],
+  "instructions": [
+    "Cut the cauliflower into large pieces and place in a large pot with enough water to cover the cauliflower. Cover and bring to a boil over high heat. Reduce the heat and simmer for 5 to 8 minutes or until the cauliflower is fork tender.",
+    "Meanwhile, cook the pasta according to package directions. Before straining, retain a cup of pasta water in case the sauce is too thick.",
+    "Add the cooked cauliflower, baby spinach, milk, cheese, salt, and optional pepper to a blender or food processor. Blend for 1 to 2 minutes until the sauce is creamy and smooth. Add 1/4 cup of pasta water at a time to loosen the sauce if it is too thick.",
+    "Combine either the full amount of sauce with the pasta if you want a saucy pasta or half the sauce with the pasta (put the remaining sauce in the fridge or freezer) if you want a boxed mac and cheese like consistency.",
+    "Top with additional salt or pepper if desired."
+  ],
+  "rating_value": "5",
+  "rating_count": "8",
+  "nutrition": {
+    "calories": "278 calories",
+    "carbohydrateContent": "30 grams carbohydrates",
+    "cholesterolContent": "31 milligrams cholesterol",
+    "fatContent": "11 grams fat",
+    "fiberContent": "4 grams fiber",
+    "proteinContent": "14 grams protein",
+    "saturatedFatContent": "6 grams saturated fat",
+    "servingSize": "1",
+    "sodiumContent": "436 milligrams sodium",
+    "sugarContent": "5 grams sugar",
+    "transFatContent": "0 grams trans fat",
+    "unsaturatedFatContent": "4 grams unsaturated fat"
+  },
+  "downloaded_image": "image.jpg"
+}

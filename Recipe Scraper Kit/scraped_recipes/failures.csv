@@ -1,0 +1,7 @@
+﻿url,reason
+https://iheartmeals.com/street-corn-chicken-rice-bowl/,ValueError: No Schema.org Recipe JSON-LD was found.
+https://us11.campaign-archive.com/?u=b46a8084d82c50035d75f781d&id=0cf154a18a,Disallowed by robots.txt (https://us11.campaign-archive.com/robots.txt)
+https://100krecipes.com/baba-ganoush-eggplant-dip/?utm_source=Pinterest&utm_medium=organic,HTTPError: 403 Client Error: Forbidden for url: https://100krecipes.com/baba-ganoush-eggplant-dip/?utm_source=Pinterest&utm_medium=organic
+https://brunchtimebaker.com/?utm_source=Pinterest&utm_medium=organic,HTTPError: 403 Client Error: Forbidden for url: https://brunchtimebaker.com/?utm_source=Pinterest&utm_medium=organic
+https://www.lizshealthytable.com/2015/06/23/peanut-butter-and-banana-smoothie-bowls-how-to-make-a-smoothie-bowl/,HTTPError: 403 Client Error: Forbidden for url: https://www.lizshealthytable.com/2015/06/23/peanut-butter-and-banana-smoothie-bowls-how-to-make-a-smoothie-bowl/
+https://foodnessgracious.com/recipes/blood-orange-loaf-cake,ValueError: No Schema.org Recipe JSON-LD was found.

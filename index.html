@@ -15,13 +15,13 @@
 
     <section class="controls" aria-label="Recipe filters">
       <label class="sr-only" for="search">Search recipes</label>
-      <input id="search" type="search" placeholder="Search recipes, ingredients, or tags…">
+      <input id="search" type="search" placeholder="Search recipes, ingredients, or tags…" disabled>
 
       <label class="sr-only" for="category">Filter by category</label>
-      <select id="category"><option value="">All categories</option></select>
+      <select id="category" disabled><option value="">All categories</option></select>
 
       <label class="sr-only" for="tag">Filter by tag</label>
-      <select id="tag"><option value="">All tags</option></select>
+      <select id="tag" disabled><option value="">All tags</option></select>
     </section>
   </header>
 
@@ -31,9 +31,11 @@
         <p class="eyebrow">Recipe collection</p>
         <h1>Browse all recipes</h1>
       </div>
-      <p class="count" id="libraryCount"></p>
+      <p class="count" id="libraryCount" aria-live="polite">Loading recipes…</p>
     </div>
-    <div class="library-grid" id="libraryGrid"></div>
+    <div class="library-grid" id="libraryGrid">
+      <p class="loading-message">Loading the recipe collection…</p>
+    </div>
   </section>
 
   <div class="reader-view" id="readerView" hidden>
@@ -47,7 +49,6 @@
     <main id="reader"></main>
   </div>
 
-  <script src="generated/recipes.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

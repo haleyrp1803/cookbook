@@ -1,4 +1,3 @@
-const recipes = window.RECIPE_DATA || [];
 const libraryView = document.getElementById('libraryView');
 const readerView = document.getElementById('readerView');
 const libraryGrid = document.getElementById('libraryGrid');
@@ -12,22 +11,257 @@ const railCount = document.getElementById('railCount');
 const homeButton = document.getElementById('homeButton');
 const backButton = document.getElementById('backButton');
 
+let recipes = [];
 let currentRecipeId = null;
 let currentView = 'library';
 
-[...new Set(recipes.map(r => r.category))].sort().forEach(v => {
-  const option = document.createElement('option');
-  option.value = v;
-  option.textContent = v;
-  category.appendChild(option);
-});
+function unquote(value) {
+  const trimmed = String(value || '').trim();
+  if (!trimmed) return '';
+  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+      (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
+    try {
+      return JSON.parse(trimmed);
+    } catch {
+      return trimmed.slice(1, -1);
+    }
+  }
+  return trimmed;
+}
 
-[...new Set(recipes.flatMap(r => r.tags))].sort().forEach(v => {
-  const option = document.createElement('option');
-  option.value = v;
-  option.textContent = v;
-  tag.appendChild(option);
-});
+function parseRecipeMarkdown(text, filename) {
+  const normalized = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
+  if (!normalized.startsWith('---\n')) {
+    throw new Error(`${filename}: missing opening frontmatter delimiter`);
+  }
+
+  const closing = normalized.indexOf('\n---\n', 4);
+  if (closing === -1) {
+    throw new Error(`${filename}: missing closing frontmatter delimiter`);
+  }
+
+  const frontmatter = normalized.slice(4, closing);
+  const body = normalized.slice(closing + 5).trim();
+  const metadata = {};
+  let currentList = null;
+
+  frontmatter.split('\n').forEach(rawLine => {
+    if (!rawLine.trim() || rawLine.trimStart().startsWith('#')) return;
+
+    if (rawLine.startsWith('  - ') && currentList) {
+      metadata[currentList].push(unquote(rawLine.slice(4)));
+      return;
+    }
+
+    const colon = rawLine.indexOf(':');
+    if (colon === -1) {
+      throw new Error(`${filename}: invalid metadata line: ${rawLine}`);
+    }
+
+    const key = rawLine.slice(0, colon).trim();
+    const value = rawLine.slice(colon + 1).trim();
+    if (!value) {
+      metadata[key] = [];
+      currentList = key;
+    } else {
+      metadata[key] = unquote(value);
+      currentList = null;
+    }
+  });
+
+  const title = String(metadata.title || '').trim();
+  const recipeCategory = String(metadata.category || '').trim();
+  if (!title) throw new Error(`${filename}: missing title`);
+  if (!recipeCategory) throw new Error(`${filename}: missing category`);
+
+  let tags = metadata.tags || [];
+  if (typeof tags === 'string') {
+    tags = tags.split(';').map(value => value.trim()).filter(Boolean);
+  }
+
+  const renderedHtml = markdownToHtml(body);
+  const plainBody = stripHtml(renderedHtml);
+  const stem = filename.replace(/\.md$/i, '');
+
+  return {
+    id: stem,
+    filename,
+    title,
+    category: recipeCategory,
+    tags,
+    source: String(metadata.source || ''),
+    servings: String(metadata.servings || ''),
+    prep_time: String(metadata.prep_time || ''),
+    cook_time: String(metadata.cook_time || ''),
+    total_time: String(metadata.total_time || ''),
+    rating: String(metadata.rating || ''),
+    image: String(metadata.image || ''),
+    html: renderedHtml,
+    search: [title, recipeCategory, tags.join(' '), plainBody].join(' ').toLowerCase()
+  };
+}
+
+function markdownToHtml(markdown) {
+  const output = [];
+  let paragraph = [];
+  let listType = null;
+
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    output.push(`<p>${inlineMarkdown(paragraph.map(line => line.trim()).join(' '))}</p>`);
+    paragraph = [];
+  };
+
+  const closeList = () => {
+    if (!listType) return;
+    output.push(`</${listType}>`);
+    listType = null;
+  };
+
+  markdown.split('\n').forEach(rawLine => {
+    const line = rawLine.trim();
+    if (!line) {
+      flushParagraph();
+      closeList();
+      return;
+    }
+
+    if (line.startsWith('### ')) {
+      flushParagraph();
+      closeList();
+      output.push(`<h3>${inlineMarkdown(line.slice(4))}</h3>`);
+      return;
+    }
+
+    if (line.startsWith('## ')) {
+      flushParagraph();
+      closeList();
+      output.push(`<h2>${inlineMarkdown(line.slice(3))}</h2>`);
+      return;
+    }
+
+    const unordered = line.match(/^[-*]\s+(.+)$/);
+    if (unordered) {
+      flushParagraph();
+      if (listType !== 'ul') {
+        closeList();
+        output.push('<ul>');
+        listType = 'ul';
+      }
+      output.push(`<li>${inlineMarkdown(unordered[1])}</li>`);
+      return;
+    }
+
+    const ordered = line.match(/^\d+\.\s+(.+)$/);
+    if (ordered) {
+      flushParagraph();
+      if (listType !== 'ol') {
+        closeList();
+        output.push('<ol>');
+        listType = 'ol';
+      }
+      output.push(`<li>${inlineMarkdown(ordered[1])}</li>`);
+      return;
+    }
+
+    paragraph.push(line);
+  });
+
+  flushParagraph();
+  closeList();
+  return output.join('\n');
+}
+
+function inlineMarkdown(value) {
+  let text = escapeHtml(value);
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  text = text.replace(/(^|[^*])\*([^*]+?)\*(?!\*)/g, '$1<em>$2</em>');
+  return text;
+}
+
+function stripHtml(value) {
+  const temporary = document.createElement('div');
+  temporary.innerHTML = value;
+  return temporary.textContent || temporary.innerText || '';
+}
+
+async function loadRecipes() {
+  try {
+    const manifestResponse = await fetch('recipes/recipe-index.json', { cache: 'no-cache' });
+    if (!manifestResponse.ok) {
+      throw new Error(`Could not load recipe index (${manifestResponse.status})`);
+    }
+
+    const filenames = await manifestResponse.json();
+    if (!Array.isArray(filenames)) {
+      throw new Error('Recipe index is not a JSON array.');
+    }
+
+    const results = await Promise.allSettled(
+      filenames.map(async filename => {
+        const response = await fetch(`recipes/${encodeURIComponent(filename)}`, { cache: 'no-cache' });
+        if (!response.ok) {
+          throw new Error(`${filename}: HTTP ${response.status}`);
+        }
+        return parseRecipeMarkdown(await response.text(), filename);
+      })
+    );
+
+    const failures = results.filter(result => result.status === 'rejected');
+    recipes = results
+      .filter(result => result.status === 'fulfilled')
+      .map(result => result.value)
+      .sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
+
+    if (!recipes.length) {
+      throw new Error('No recipes could be loaded.');
+    }
+
+    if (failures.length) {
+      console.error('Some recipes failed to load:', failures.map(result => result.reason));
+    }
+
+    populateFilters();
+    search.disabled = false;
+    category.disabled = false;
+    tag.disabled = false;
+    renderLists();
+    showLibrary(false);
+
+    if (failures.length) {
+      libraryCount.textContent += ` · ${failures.length} file${failures.length === 1 ? '' : 's'} failed to load`;
+    }
+  } catch (error) {
+    console.error(error);
+    libraryCount.textContent = 'Recipe collection unavailable';
+    libraryGrid.innerHTML = `
+      <div class="load-error">
+        <h2>The recipes could not be loaded.</h2>
+        <p>${escapeHtml(error.message)}</p>
+        <p>Confirm that <code>recipes/recipe-index.json</code> and the Markdown files were pushed to GitHub Pages.</p>
+      </div>`;
+  }
+}
+
+function populateFilters() {
+  category.innerHTML = '<option value="">All categories</option>';
+  tag.innerHTML = '<option value="">All tags</option>';
+
+  [...new Set(recipes.map(recipe => recipe.category))].sort().forEach(value => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value;
+    category.appendChild(option);
+  });
+
+  [...new Set(recipes.flatMap(recipe => recipe.tags))].sort().forEach(value => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value;
+    tag.appendChild(option);
+  });
+}
 
 function glanceRow(label, value) {
   return value
@@ -86,17 +320,17 @@ function renderLists() {
   });
 
   document.querySelectorAll('.card').forEach(card => {
-    card.classList.toggle('active', Number(card.dataset.id) === currentRecipeId);
+    card.classList.toggle('active', card.dataset.id === currentRecipeId);
   });
 }
 
-function showLibrary() {
+function showLibrary(shouldScroll = true) {
   currentView = 'library';
   currentRecipeId = null;
   readerView.hidden = true;
   libraryView.hidden = false;
   renderLists();
-  window.scrollTo({ top:0, behavior:'smooth' });
+  if (shouldScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function openRecipe(recipe) {
@@ -133,16 +367,16 @@ function openRecipe(recipe) {
     </div>`;
 
   renderLists();
-  window.scrollTo({ top:0, behavior:'smooth' });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, character => ({
-    '&':'&amp;',
-    '<':'&lt;',
-    '>':'&gt;',
-    '"':'&quot;',
-    "'":'&#039;'
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
   }[character]));
 }
 
@@ -161,8 +395,7 @@ function handleFilterChange() {
 }
 
 [search, category, tag].forEach(control => control.addEventListener('input', handleFilterChange));
-homeButton.addEventListener('click', showLibrary);
-backButton.addEventListener('click', showLibrary);
+homeButton.addEventListener('click', () => showLibrary());
+backButton.addEventListener('click', () => showLibrary());
 
-renderLists();
-showLibrary();
+loadRecipes();

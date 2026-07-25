@@ -1,38 +1,56 @@
-# Haley's Cookbook Website
+# Haley's Recipe Book
 
-The **editable source of truth** is the `recipes/` folder. Each recipe is one Markdown file with a small metadata block at the top.
+This is a static GitHub Pages cookbook whose recipe files are editable Markdown.
 
-## Editing a recipe
+## Authoritative recipe source
 
-1. Open the matching `.md` file in `recipes/` with Notepad, VS Code, or another text editor.
-2. Edit the metadata, ingredients, preparation, or personal notes.
-3. From PowerShell in this folder, run:
+Each recipe lives in `recipes/<recipe-name>.md`. The browser fetches and renders those Markdown files directly from GitHub Pages. Recipe content is no longer compiled into a large JavaScript bundle.
 
-```powershell
-py scripts\build_recipes.py
-```
+## Ordinary recipe edits
 
-4. Open `index.html` to inspect the result.
-5. Commit both the edited Markdown file and the regenerated `generated/recipes.js`.
-
-## Adding a recipe
-
-Copy an existing Markdown file, rename it with a short descriptive filename, and update its contents. Put the image in `assets/` and set the `image:` path accordingly. Then run the build command.
-
-## Validating without changing output
+Edit an existing Markdown file, then commit and push:
 
 ```powershell
-py scripts\build_recipes.py --check
+Set-Location "C:\Users\haley\OneDrive\Desktop\Cookbook"
+
+git add recipes
+git commit -m "Update recipe"
+git push
 ```
 
-The builder reports missing titles, categories, images, malformed metadata, and duplicate recipe titles.
+No build command is needed when changing ingredients, instructions, notes, title, category, tags, timing, rating, source, or image metadata inside an existing recipe file.
 
-## Folder roles
+## Adding, deleting, or renaming recipe files
 
-- `recipes/` — editable recipe source files
-- `assets/` — local recipe images
-- `scripts/build_recipes.py` — validates and builds the site data
-- `generated/recipes.js` — generated website data; do not edit manually
-- `index.html`, `styles.css`, `app.js` — site interface
+The browser needs a filename manifest because GitHub Pages does not expose directory listings. After adding, deleting, or renaming a `.md` file, regenerate the manifest:
 
-Current collection: 96 recipes.
+```powershell
+py .\scripts\build_recipe_index.py
+```
+
+Validate it with:
+
+```powershell
+py .\scripts\build_recipe_index.py --check
+```
+
+Then commit both the recipe-file change and `recipes/recipe-index.json`.
+
+## File structure
+
+```text
+index.html
+styles.css
+app.js
+assets/
+recipes/
+  recipe-index.json
+  banana-bread.md
+  ...
+scripts/
+  build_recipe_index.py
+```
+
+## Deployment
+
+GitHub Pages should publish from the `main` branch and repository root.

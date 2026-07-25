@@ -296,3 +296,26 @@ main {
   .recipe-sidebar { position:static; max-height:none; overflow:visible; }
   .recipe-image { max-height:220px; }
 }
+
+.loading-message,
+.load-error {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.load-error {
+  max-width: 760px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+}
+
+.load-error h2 {
+  margin-top: 0;
+  color: var(--pine);
+}
+
+.load-error code {
+  font-family: Consolas, "Courier New", monospace;
+}

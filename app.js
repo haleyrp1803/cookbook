@@ -333,6 +333,28 @@ function showLibrary(shouldScroll = true) {
   if (shouldScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+
+function pinRecipeSidebar() {
+  const sidebar = reader.querySelector('.recipe-sidebar');
+  if (!sidebar || window.innerWidth <= 850) return;
+
+  sidebar.classList.remove('is-pinned');
+  sidebar.style.removeProperty('--pinned-top');
+  sidebar.style.removeProperty('--pinned-left');
+  sidebar.style.removeProperty('--pinned-width');
+
+  const rect = sidebar.getBoundingClientRect();
+  sidebar.style.setProperty('--pinned-top', `${rect.top}px`);
+  sidebar.style.setProperty('--pinned-left', `${rect.left}px`);
+  sidebar.style.setProperty('--pinned-width', `${rect.width}px`);
+  sidebar.classList.add('is-pinned');
+}
+
+function refreshPinnedSidebar() {
+  if (currentView !== 'reader') return;
+  requestAnimationFrame(pinRecipeSidebar);
+}
+
 function openRecipe(recipe) {
   currentView = 'reader';
   currentRecipeId = recipe.id;
@@ -367,7 +389,8 @@ function openRecipe(recipe) {
     </div>`;
 
   renderLists();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  requestAnimationFrame(() => requestAnimationFrame(pinRecipeSidebar));
 }
 
 function escapeHtml(value = '') {
@@ -397,5 +420,6 @@ function handleFilterChange() {
 [search, category, tag].forEach(control => control.addEventListener('input', handleFilterChange));
 homeButton.addEventListener('click', () => showLibrary());
 backButton.addEventListener('click', () => showLibrary());
+window.addEventListener('resize', refreshPinnedSidebar);
 
 loadRecipes();

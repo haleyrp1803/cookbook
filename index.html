@@ -7,25 +7,44 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Haley's Recipe Book</h1>
-    <p>A searchable local collection of recipes, images, categories, and tags.</p>
+  <header class="site-header">
+    <button class="brand" id="homeButton" type="button" aria-label="Show all recipes">
+      <span class="brand-title">Haley's Recipe Book</span>
+      <span class="brand-subtitle">A searchable collection of recipes</span>
+    </button>
+
+    <section class="controls" aria-label="Recipe filters">
+      <label class="sr-only" for="search">Search recipes</label>
+      <input id="search" type="search" placeholder="Search recipes, ingredients, or tags…">
+
+      <label class="sr-only" for="category">Filter by category</label>
+      <select id="category"><option value="">All categories</option></select>
+
+      <label class="sr-only" for="tag">Filter by tag</label>
+      <select id="tag"><option value="">All tags</option></select>
+    </section>
   </header>
 
-  <section class="controls" aria-label="Recipe filters">
-    <input id="search" type="search" placeholder="Search recipes, ingredients, or tags…">
-    <select id="category"><option value="">All categories</option></select>
-    <select id="tag"><option value="">All tags</option></select>
+  <section class="library-view" id="libraryView" aria-label="Recipe collection">
+    <div class="library-heading">
+      <div>
+        <p class="eyebrow">Recipe collection</p>
+        <h1>Browse all recipes</h1>
+      </div>
+      <p class="count" id="libraryCount"></p>
+    </div>
+    <div class="library-grid" id="libraryGrid"></div>
   </section>
 
-  <div class="layout">
-    <aside>
-      <p class="count" id="count"></p>
+  <div class="reader-view" id="readerView" hidden>
+    <aside class="recipe-rail" aria-label="Recipe list">
+      <div class="rail-heading">
+        <button class="back-button" id="backButton" type="button">← All recipes</button>
+        <p class="count" id="railCount"></p>
+      </div>
       <div class="cards" id="cards"></div>
     </aside>
-    <main id="reader">
-      <div class="empty">Select a recipe to open it.</div>
-    </main>
+    <main id="reader"></main>
   </div>
 
   <script src="generated/recipes.js"></script>

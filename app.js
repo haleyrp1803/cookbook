@@ -164,6 +164,14 @@ function inlineMarkdown(value) {
   return text;
 }
 
+function recipeIdFromFilename(filename = '') {
+  return String(filename || '')
+    .replace(/\\/g, '/')
+    .split('/')
+    .pop()
+    .replace(/\.md$/i, '');
+}
+
 async function loadRecipes() {
   try {
     const response = await fetch('recipes/recipe-index.json', { cache: 'no-cache' });
@@ -178,6 +186,7 @@ async function loadRecipes() {
 
     recipes = payload.recipes.map(recipe => ({
       ...recipe,
+      id: String(recipe.id || recipe.slug || recipeIdFromFilename(recipe.filename)),
       tags: Array.isArray(recipe.tags) ? recipe.tags : [],
       search_text: String(recipe.search_text || '').toLowerCase()
     }));

@@ -1,85 +1,103 @@
-# Personal Recipe Scraper
+# Cookbook Markdown Recipe Scraper
 
-## What it does
+This version writes recipes directly in the format used by Haley's GitHub Pages cookbook.
 
-For each direct recipe-page URL, the script:
+For each successful URL it creates:
 
-1. checks `robots.txt` unless you use `--ignore-robots`;
-2. downloads the HTML;
-3. extracts the page's Schema.org `Recipe` JSON-LD;
-4. downloads the principal recipe image when accessible;
-5. saves:
-   - `recipe.json`
-   - `recipe.md`
-   - the downloaded image
-6. creates `index.csv` and `failures.csv`.
+```text
+Cookbook/
+├── recipes/
+│   ├── recipe-name.md
+│   └── recipe-index.json
+├── assets/
+│   └── recipe-name.jpg
+├── scrape_log.csv
+└── scrape_failures.csv
+```
 
-The Markdown file is intended to be easy to copy into the Word cookbook template.
+Each Markdown file contains:
 
-## Windows setup
+- YAML frontmatter matching the current cookbook fields;
+- a description when supplied by the source;
+- `## Ingredients`;
+- `## Preparation`;
+- `## Personal Notes`.
 
-Open PowerShell in this folder.
+The script also updates `recipes/recipe-index.json`, so newly scraped recipes appear on the website after committing and pushing.
+
+## Setup on Windows
+
+Open PowerShell in this scraper-kit folder:
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-py -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-If PowerShell blocks activation, run:
+Using the virtual environment's Python directly avoids PowerShell execution-policy problems.
+
+## Add URLs
+
+Put one direct recipe-page URL per line in `urls.txt`.
+
+## Scrape directly into the cookbook repository
 
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
+Set-Location "C:\Users\haley\OneDrive\Desktop\Cookbook\Recipe Scraper Kit"
+
+.\.venv\Scripts\python.exe .\recipe_scraper_markdown.py .\urls.txt `
+  --cookbook-root "C:\Users\haley\OneDrive\Desktop\Cookbook"
 ```
 
-## Add recipe URLs
+This creates the Markdown files in `Cookbook\recipes`, saves images in `Cookbook\assets`, and updates the recipe index.
 
-Edit `urls.txt` and put one **direct recipe-post URL** on each line.
+## Override the inferred category
 
-Pinterest pin URLs are usually less useful than the destination recipe URLs. Open the pin and copy the recipe site's URL.
-
-## Run
+The automatic category is a best-effort classification. For a batch that belongs to one known category:
 
 ```powershell
-py recipe_scraper.py urls.txt
+.\.venv\Scripts\python.exe .\recipe_scraper_markdown.py .\urls.txt `
+  --cookbook-root "C:\Users\haley\OneDrive\Desktop\Cookbook" `
+  --category "Soups, Stews, and Chili"
 ```
 
-Custom output directory:
+## Add tags to the whole batch
 
 ```powershell
-py recipe_scraper.py urls.txt --output my_recipes
+.\.venv\Scripts\python.exe .\recipe_scraper_markdown.py .\urls.txt `
+  --cookbook-root "C:\Users\haley\OneDrive\Desktop\Cookbook" `
+  --tag "weeknight" `
+  --tag "good leftovers"
 ```
 
-Overwrite existing recipe folders:
+## Existing filenames
+
+By default, a duplicate slug receives `-2`, `-3`, and so on rather than overwriting an existing recipe. Use `--overwrite` only when intentionally replacing the file with the same slug.
+
+## After scraping
+
+Review the new Markdown files, especially:
+
+- category;
+- tags;
+- ingredient completeness;
+- preparation steps;
+- image;
+- source URL.
+
+Then commit and push:
 
 ```powershell
-py recipe_scraper.py urls.txt --overwrite
-```
-
-Slow the requests further:
-
-```powershell
-py recipe_scraper.py urls.txt --delay 4
+git status
+git add recipes assets scrape_log.csv scrape_failures.csv
+git commit -m "Add scraped recipes"
+git push
 ```
 
 ## Limits
 
-- It works best on sites publishing Schema.org `Recipe` JSON-LD.
-- It does not bypass logins, paywalls, CAPTCHAs, or anti-bot systems.
-- JavaScript-only pages may fail because the recipe data are not present in the initial HTML.
-- Some image servers reject automated downloads even when the recipe text is available.
-- Always inspect the extracted ingredient list and instructions before cooking.
-- Replace the placeholder contact address in `USER_AGENT` with your own email if you plan to use the script regularly.
-
-## Output example
-
-```text
-scraped_recipes/
-├── index.csv
-├── failures.csv
-└── creamy-mushroom-orzo-a1b2c3d4/
-    ├── recipe.json
-    ├── recipe.md
-    └── image.jpg
-```
+- Works best on sites publishing Schema.org `Recipe` JSON-LD.
+- Does not bypass logins, paywalls, CAPTCHAs, robots.txt restrictions, or anti-bot systems.
+- JavaScript-only sites may not expose recipe data in the initial HTML.
+- Category and tags are inferred and should be reviewed.
+- Always verify ingredients and instructions before cooking.

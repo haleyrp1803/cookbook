@@ -14,6 +14,8 @@ const backButton = document.getElementById('backButton');
 let recipes = [];
 let currentRecipeId = null;
 let currentView = 'library';
+let libraryScrollY = 0;
+let routeChangeInProgress = false;
 const recipeDetailCache = new Map();
 
 function unquote(value) {
@@ -189,7 +191,7 @@ async function loadRecipes() {
     category.disabled = false;
     tag.disabled = false;
     renderLists();
-    showLibrary(false);
+    initializeRoute();
   } catch (error) {
     console.error(error);
     libraryCount.textContent = 'Recipe collection unavailable';
@@ -254,7 +256,7 @@ function makeCard(recipe) {
   button.type = 'button';
   button.dataset.id = recipe.id;
   button.innerHTML = cardMarkup(recipe);
-  button.addEventListener('click', () => openRecipe(recipe));
+  button.addEventListener('click', () => navigateToRecipe(recipe));
   return button;
 }
 
@@ -282,13 +284,97 @@ function renderLists() {
   });
 }
 
-function showLibrary(shouldScroll = true) {
+function showLibrary(options = {}) {
+  const { restoreScroll = true, scrollY = libraryScrollY } = options;
   currentView = 'library';
   currentRecipeId = null;
   readerView.hidden = true;
   libraryView.hidden = false;
+  document.title = "Haley's Recipe Book";
   renderLists();
-  if (shouldScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: restoreScroll ? scrollY : 0, behavior: 'auto' });
+  });
+}
+
+function recipeHash(recipe) {
+  return `#${encodeURIComponent(recipe.id)}`;
+}
+
+function recipeFromHash() {
+  const raw = window.location.hash.replace(/^#/, '');
+  if (!raw) return null;
+  let id = raw;
+  try { id = decodeURIComponent(raw); } catch { /* use raw hash */ }
+  return recipes.find(recipe => recipe.id === id) || null;
+}
+
+function rememberLibraryScroll() {
+  if (currentView !== 'library') return;
+  libraryScrollY = window.scrollY;
+  const state = { ...(history.state || {}), view: 'library', scrollY: libraryScrollY };
+  history.replaceState(state, '', window.location.href);
+}
+
+function navigateToRecipe(recipe, options = {}) {
+  const { replace = false } = options;
+  if (currentView === 'library') rememberLibraryScroll();
+
+  const state = {
+    view: 'recipe',
+    recipeId: recipe.id,
+    libraryScrollY
+  };
+  const method = replace ? 'replaceState' : 'pushState';
+  history[method](state, '', recipeHash(recipe));
+  openRecipe(recipe);
+}
+
+function navigateToLibrary(options = {}) {
+  const { replace = false } = options;
+  const state = { view: 'library', scrollY: libraryScrollY };
+  const method = replace ? 'replaceState' : 'pushState';
+  history[method](state, '', `${window.location.pathname}${window.location.search}`);
+  showLibrary({ restoreScroll: true, scrollY: libraryScrollY });
+}
+
+function initializeRoute() {
+  const recipe = recipeFromHash();
+  if (recipe) {
+    libraryScrollY = Number(history.state?.libraryScrollY || 0);
+    history.replaceState(
+      { view: 'recipe', recipeId: recipe.id, libraryScrollY },
+      '',
+      recipeHash(recipe)
+    );
+    openRecipe(recipe);
+    return;
+  }
+
+  libraryScrollY = Number(history.state?.scrollY || 0);
+  history.replaceState(
+    { view: 'library', scrollY: libraryScrollY },
+    '',
+    `${window.location.pathname}${window.location.search}`
+  );
+  showLibrary({ restoreScroll: true, scrollY: libraryScrollY });
+}
+
+function handleRouteChange() {
+  if (!recipes.length || routeChangeInProgress) return;
+  routeChangeInProgress = true;
+
+  const recipe = recipeFromHash();
+  if (recipe) {
+    libraryScrollY = Number(history.state?.libraryScrollY ?? libraryScrollY);
+    openRecipe(recipe).finally(() => { routeChangeInProgress = false; });
+    return;
+  }
+
+  libraryScrollY = Number(history.state?.scrollY ?? libraryScrollY);
+  showLibrary({ restoreScroll: true, scrollY: libraryScrollY });
+  routeChangeInProgress = false;
 }
 
 function pinRecipeSidebar() {
@@ -341,11 +427,43 @@ async function fetchRecipeDetails(recipe) {
   return details;
 }
 
+function recipeNavigationMarkup(recipe) {
+  const filtered = filteredRecipes();
+  const index = filtered.findIndex(item => item.id === recipe.id);
+  const previous = index > 0 ? filtered[index - 1] : null;
+  const next = index >= 0 && index < filtered.length - 1 ? filtered[index + 1] : null;
+
+  return `
+    <nav class="recipe-navigation" aria-label="Recipe navigation">
+      <button class="recipe-nav-button" type="button" data-recipe-nav="previous" ${previous ? '' : 'disabled'}>
+        <span aria-hidden="true">←</span>
+        <span><small>Previous recipe</small>${previous ? escapeHtml(previous.title) : 'None'}</span>
+      </button>
+      <button class="recipe-nav-button recipe-nav-next" type="button" data-recipe-nav="next" ${next ? '' : 'disabled'}>
+        <span><small>Next recipe</small>${next ? escapeHtml(next.title) : 'None'}</span>
+        <span aria-hidden="true">→</span>
+      </button>
+    </nav>`;
+}
+
+function bindRecipeNavigation(recipe) {
+  const filtered = filteredRecipes();
+  const index = filtered.findIndex(item => item.id === recipe.id);
+  const previous = index > 0 ? filtered[index - 1] : null;
+  const next = index >= 0 && index < filtered.length - 1 ? filtered[index + 1] : null;
+
+  const previousButton = reader.querySelector('[data-recipe-nav="previous"]');
+  const nextButton = reader.querySelector('[data-recipe-nav="next"]');
+  if (previous && previousButton) previousButton.addEventListener('click', () => navigateToRecipe(previous));
+  if (next && nextButton) nextButton.addEventListener('click', () => navigateToRecipe(next));
+}
+
 function renderRecipe(details) {
   reader.innerHTML = `
     <div class="recipe-header">
       <div class="category">${escapeHtml(details.category)}</div>
       <h1 class="recipe-title">${escapeHtml(details.title)}</h1>
+      ${recipeNavigationMarkup(details)}
     </div>
     <div class="recipe-layout">
       <aside class="recipe-sidebar">
@@ -369,6 +487,8 @@ function renderRecipe(details) {
       </div>
     </div>`;
 
+  document.title = `${details.title} · Haley's Recipe Book`;
+  bindRecipeNavigation(details);
   requestAnimationFrame(() => requestAnimationFrame(pinRecipeSidebar));
 }
 
@@ -420,13 +540,16 @@ function handleFilterChange() {
   if (currentView === 'reader') {
     const filtered = filteredRecipes();
     const currentStillVisible = filtered.some(recipe => recipe.id === currentRecipeId);
-    if (!currentStillVisible) showLibrary();
+    if (!currentStillVisible) navigateToLibrary();
   }
 }
 
 [search, category, tag].forEach(control => control.addEventListener('input', handleFilterChange));
-homeButton.addEventListener('click', () => showLibrary());
-backButton.addEventListener('click', () => showLibrary());
+homeButton.addEventListener('click', () => navigateToLibrary());
+backButton.addEventListener('click', () => navigateToLibrary());
 window.addEventListener('resize', refreshPinnedSidebar);
+window.addEventListener('popstate', handleRouteChange);
+window.addEventListener('hashchange', handleRouteChange);
+window.addEventListener('pagehide', rememberLibraryScroll);
 
 loadRecipes();

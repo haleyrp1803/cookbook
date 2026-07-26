@@ -76,3 +76,8 @@ Recipe Scraper Kit/
 ## Deployment
 
 GitHub Pages publishes from the `main` branch and repository root. The root-level `.nojekyll` file ensures recipe Markdown is served without Jekyll transformation.
+
+
+## Recipe URLs and navigation
+
+Each recipe has a stable hash URL such as `#banana-bread`. Direct links and browser refreshes reopen that recipe. Browser Back and Forward move through recipe and library history, and returning to the library restores the previous grid scroll position. Previous/Next controls follow the currently filtered recipe set.

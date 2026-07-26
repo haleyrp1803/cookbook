@@ -19,6 +19,7 @@ cook_time: "15 min"
 total_time: "35 min"
 rating: "4.84"
 image: "assets/068_chicken-katsu-bowls.webp"
+added_date: "2026-07-25"
 ---
 Crispy chicken katsu rice bowls served with avocado, cucumber and a delicious spicy curry mayo is a guaranteed dinner favorite.
 

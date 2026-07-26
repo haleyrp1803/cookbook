@@ -17,6 +17,7 @@ cook_time: "30 min"
 total_time: "35 min"
 rating: "4.97"
 image: "assets/070_pumpkin-risotto-recipe.jpg"
+added_date: "2026-07-25"
 ---
 This Pumpkin Risotto with Goat Cheese and Cranberries is a perfect fall comfort food. It’s rich and creamy and perfect for an elegant weeknight meal. Or try serving this to your vegetarian guests at Thanksgiving.
 

@@ -18,6 +18,7 @@ cook_time: "480 min"
 total_time: "485 min"
 rating: "4.79"
 image: "assets/098_creamy-crockpot-white-chicken-chili.jpg"
+added_date: "2026-07-25"
 ---
 This creamy white chicken chili is made super easy in your crockpot! Creamy with plenty of spice, it's the perfect companion on a chilly night!
 

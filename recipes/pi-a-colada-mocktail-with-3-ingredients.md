@@ -12,6 +12,7 @@ cook_time: ""
 total_time: ""
 rating: "4.95"
 image: "assets/pi-a-colada-mocktail-with-3-ingredients.webp"
+added_date: "2026-07-25"
 ---
 An easy non alcoholic piña colada mocktail for 1 or a crowd.
 

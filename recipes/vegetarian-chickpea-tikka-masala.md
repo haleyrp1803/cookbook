@@ -19,6 +19,7 @@ cook_time: "20 min"
 total_time: "35 min"
 rating: "4.72"
 image: "assets/045_vegetarian-chickpea-tikka-masala.webp"
+added_date: "2026-07-25"
 ---
 Toasted chickpeas dunked in creamy tomato tikka sauce to make this authentic and restaurant-style healthy chickpea tikka masala.
 

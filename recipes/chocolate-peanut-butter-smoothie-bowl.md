@@ -16,6 +16,7 @@ cook_time: ""
 total_time: "5 min"
 rating: "5"
 image: "assets/002_chocolate-peanut-butter-smoothie-bowl.jpg"
+added_date: "2026-07-25"
 ---
 This Chocolate Peanut Butter Banana Smoothie Bowl tastes like a peanut butter cup, but it's actually a filling, superfood-packed breakfast that comes together in just 5 minutes! This gluten-free + vegan smoothie bowl is the perfect easy vegan breakfast.
 

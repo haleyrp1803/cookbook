@@ -19,6 +19,7 @@ cook_time: "25 min"
 total_time: "30 min"
 rating: "5"
 image: "assets/044_vegan-chickpea-cauliflower-curry.jpg"
+added_date: "2026-07-25"
 ---
 This super easy and ultra-creamy Vegan Chickpea Cauliflower Curry will become your new favorite weeknight dinner recipe. The mouth-watering sauce is made with crushed tomatoes, chickpeas, cauliflower, garlic, onions, coconut milk, and plenty of heartwarming spices. So much flavor!
 

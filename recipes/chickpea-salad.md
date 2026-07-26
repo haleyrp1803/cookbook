@@ -18,6 +18,7 @@ cook_time: ""
 total_time: "20 min"
 rating: "4.95"
 image: "assets/074_chickpea-salad.jpg"
+added_date: "2026-07-25"
 ---
 This easy chickpea salad recipe is satisfying and delicious. Filled with protein-packed garbanzo beans, fresh vegetables, and a zesty lemon dressing, it's a perfect picnic side dish or healthy lunch.
 

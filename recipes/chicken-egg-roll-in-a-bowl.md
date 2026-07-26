@@ -20,6 +20,7 @@ cook_time: "PT10M"
 total_time: "PT18M"
 rating: "4.84"
 image: "assets/chicken-egg-roll-in-a-bowl.jpg"
+added_date: "2026-07-25"
 ---
 This deconstructed egg roll is absolutely delicious and a super fast dinner. The quick recipe has a ton of flavor with the melding of the ingredients, and it's a perfect way to use leftover rotisserie chicken.
 

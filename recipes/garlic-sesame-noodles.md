@@ -16,6 +16,7 @@ cook_time: "10 min"
 total_time: "15 min"
 rating: "5"
 image: "assets/053_garlic-sesame-noodles.jpg"
+added_date: "2026-07-25"
 ---
 Noodles are a girls best friend and these easy garlic sesame noodles are without a doubt my favorite noodle recipe to date! They require just a few ingredients, are gluten free, ready in 15 minutes, and can be eaten hot or cold!
 

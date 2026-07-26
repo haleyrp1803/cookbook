@@ -15,6 +15,7 @@ cook_time: "PT35M"
 total_time: "PT45M"
 rating: "4.9"
 image: "assets/chicken-and-chorizo-paella.jpg"
+added_date: "2026-07-25"
 ---
 This amazing chicken and chorizo paella is the perfect dish to make at home, either for a casual dinner or for entertaining. It's such an easy and flavor-packed recipe that comes together in 45 minutes!
 

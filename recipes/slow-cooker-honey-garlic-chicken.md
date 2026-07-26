@@ -19,6 +19,7 @@ cook_time: "180 min"
 total_time: "195 min"
 rating: "3.93"
 image: "assets/022_slow-cooker-honey-garlic-chicken.jpg"
+added_date: "2026-07-25"
 ---
 This Slow Cooker Honey Garlic Chicken recipe is one of the easiest and most delicious crock pot meals. Succulent chicken and vegetables simmer in a mouthwatering honey garlic sauce.
 

@@ -14,6 +14,7 @@ cook_time: "PT3M"
 total_time: "PT45M"
 rating: "5"
 image: "assets/greek-yogurt-lemon-poppy-seed-pancakes.jpg"
+added_date: "2026-07-25"
 ---
 Start your mornings right with these whole wheat Greek yogurt lemon poppy seed pancakes. The flavor and texture is out of this world!
 

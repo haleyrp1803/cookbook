@@ -16,6 +16,7 @@ cook_time: "15 min"
 total_time: "30 min"
 rating: "4.65"
 image: "assets/026_brown-butter-raspberry-chocolate-chip-cookies.jpg"
+added_date: "2026-07-25"
 ---
 Fresh berries + classic chocolate chip cookies = the perfect deliciously fun summertime cookie!
 

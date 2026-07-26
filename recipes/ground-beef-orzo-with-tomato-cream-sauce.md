@@ -17,6 +17,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: "4.93"
 image: "assets/055_ground-beef-orzo-with-tomato-cream-sauce.jpg"
+added_date: "2026-07-25"
 ---
 This one pot ground beef orzo recipe comes together in just 30 minutes and is a creamy, comforting, and delicious meal for busy weeknights!
 

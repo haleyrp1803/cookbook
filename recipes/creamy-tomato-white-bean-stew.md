@@ -20,6 +20,7 @@ cook_time: "20 min"
 total_time: "25 min"
 rating: "4.92"
 image: "assets/100_creamy-tomato-white-bean-stew.jpg"
+added_date: "2026-07-25"
 ---
 The rich and comforting flavors of this Creamy Vegan Tomato White Bean Stew make the perfect easy lunch or dinner. This dairy-free & plant-based recipe is packed with wholesome ingredients, like protein-packed white beans, cherry tomatoes, and nutrient-dense greens. Learn how to make this easy and satisfying vegan stew in just 25 minutes.
 

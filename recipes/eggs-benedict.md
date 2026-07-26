@@ -18,6 +18,7 @@ cook_time: "PT15M"
 total_time: "PT30M"
 rating: "5"
 image: "assets/eggs-benedict.jpg"
+added_date: "2026-07-25"
 ---
 This eggs Benedict recipe is a delicious breakfast or brunch! I top toasted English muffins with poached eggs, creamy hollandaise sauce, and juicy tomato slices instead of Canadian bacon. See the blog post above for make-ahead tips!
 

@@ -14,6 +14,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: ""
 image: "assets/108_mediterranean-roasted-eggplant.webp"
+added_date: "2026-07-25"
 ---
 This Mediterranean Roasted Eggplant is a celebration of flavors and texture that truly showcases the beauty of this versatile vegetable. This dish is not just about the eggplant, though; it’s infused with Mediterranean spices and ingredients like garlic, olive oil, and fresh herbs, which add depth and brightness to every bite.
 

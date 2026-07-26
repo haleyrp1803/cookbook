@@ -18,6 +18,7 @@ cook_time: "PT300M"
 total_time: "PT320M"
 rating: "4.97"
 image: "assets/traditional-mexican-horchata.webp"
+added_date: "2026-07-25"
 ---
 Learn how to make the authentic Horchata drink that everyone loves! With this step-by-step tutorial, you’ll be able to make the best homemade Horchata recipe made with a few simple ingredients. Skip the store-bought mixes and use this easy recipe right at home!
 

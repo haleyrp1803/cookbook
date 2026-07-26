@@ -20,6 +20,7 @@ cook_time: "8 hr"
 total_time: "8 hr 5 min"
 rating: "4.5"
 image: "assets/096_3-bean-vegetarian-chili.webp"
+added_date: "2026-07-25"
 ---
 A hearty slow cooker vegetarian chili, made with three different beans and plenty of vegetables. This meatless meal is one that everyone will enjoy, it is full of bold flavors and textures plus it isn't too sweet like many vegetarian chilis.
 

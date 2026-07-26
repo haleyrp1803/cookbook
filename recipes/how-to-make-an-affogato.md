@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT2M"
 rating: "4.86"
 image: "assets/how-to-make-an-affogato.webp"
+added_date: "2026-07-25"
 ---
 an Italian dessert with espresso and ice cream
 

@@ -18,6 +18,7 @@ cook_time: "10 min"
 total_time: "40 min"
 rating: "5"
 image: "assets/066_bibimbap.jpg"
+added_date: "2026-07-25"
 ---
 This bibimbap recipe is my spin on the traditional Korean rice bowl. I top it with assorted vegetables, a fried egg, and gochujang sauce. It's so flavorful and satisfying! Get ahead by making the sauce and prepping the veggies up to 3 days in advance.
 

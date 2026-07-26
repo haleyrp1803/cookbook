@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "10 min"
 rating: "5"
 image: "assets/004_how-to-make-a-smoothie-bowl.jpg"
+added_date: "2026-07-25"
 ---
 Breakfast, lunch or dessert—this smoothie bowl recipe is a treat any which way you enjoy it! And we’re sharing our ultimate smoothie bowl topping trick, too!
 

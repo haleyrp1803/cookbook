@@ -17,6 +17,7 @@ cook_time: "PT5M"
 total_time: "PT20M"
 rating: "5"
 image: "assets/mexican-mocha.jpg"
+added_date: "2026-07-25"
 ---
 Mexican mocha is a playful and warming take on a classic mocha drink. This Latin-inspired spicy mocha is an exciting combination of coffee, chocolate and spices creating a deeply comforting drink with a kick of chilli heat.
 

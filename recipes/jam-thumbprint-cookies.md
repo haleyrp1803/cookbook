@@ -15,6 +15,7 @@ cook_time: "12 min"
 total_time: "92 min"
 rating: "4.98"
 image: "assets/033_jam-thumbprint-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These buttery, fresh cookies are filled with raspberry jam, then baked until golden brown!
 

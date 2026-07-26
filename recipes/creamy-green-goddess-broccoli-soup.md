@@ -16,6 +16,7 @@ cook_time: "30 min"
 total_time: ""
 rating: ""
 image: "assets/099_creamy-green-goddess-broccoli-soup.jpg"
+added_date: "2026-07-25"
 ---
 **Cook:** 30 min
 

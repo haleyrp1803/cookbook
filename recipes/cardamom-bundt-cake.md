@@ -15,6 +15,7 @@ cook_time: "50 min"
 total_time: "70 min"
 rating: "5"
 image: "assets/013_cardamom-bundt-cake.jpg"
+added_date: "2026-07-25"
 ---
 This bundt cake is as simple as it gets. That's probably why it's one of my favorites. Laced with cardamom (that fantastic lemony spice) it is straightforward, has one of the best crumbs I ever came across and needs no more than a dusting of powdered sugar.
 

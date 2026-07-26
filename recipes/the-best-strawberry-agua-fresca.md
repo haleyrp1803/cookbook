@@ -15,6 +15,7 @@ cook_time: ""
 total_time: ""
 rating: "5"
 image: "assets/the-best-strawberry-agua-fresca.webp"
+added_date: "2026-07-25"
 ---
 An easy, refreshing strawberry agua fresca recipe. This strawberry water is hydrating and delicious.
 

@@ -16,6 +16,7 @@ cook_time: "285 min"
 total_time: "300 min"
 rating: "4.38"
 image: "assets/104_slow-cooker-chicken-dumplings-with-canned-biscuits.jpg"
+added_date: "2026-07-25"
 ---
 Slow cooker chicken and dumplings is a hearty, comforting meal with tender chicken, vegetables, and fluffy biscuits. The creamy broth and savory seasonings make it a perfect dish for a cozy dinner
 

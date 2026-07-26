@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "30 min"
 rating: "4.94"
 image: "assets/078_easy-creamy-coleslaw-recipe.jpg"
+added_date: "2026-07-25"
 ---
 This easy coleslaw recipe is the perfect summer side dish! The creamy homemade dressing fills it with sweet and tangy flavor. I like to shred the cabbage and carrots myself, but feel free to use a store-bought bag of slaw mix if you prefer.
 

@@ -15,6 +15,7 @@ cook_time: "55 min"
 total_time: "70 min"
 rating: "3.98"
 image: "assets/016_pistachio-cardamom-pound-cake.jpg"
+added_date: "2026-07-25"
 ---
 Pistachio Cardamom Pound Cake features a classic Middle Eastern flavor pairing of warm cardamom spice and crunchy pistachios --- it's an unusual and delicious cake perfect with coffee or tea.
 

@@ -15,6 +15,7 @@ cook_time: "40 min"
 total_time: "1 hr"
 rating: "5"
 image: "assets/010_apple-upside-down-cake.webp"
+added_date: "2026-07-25"
 ---
 ## Ingredients
 

@@ -17,6 +17,7 @@ cook_time: "20 min"
 total_time: "40 min"
 rating: "4.99"
 image: "assets/073_asian-edamame-peanut-crunch-salad.jpg"
+added_date: "2026-07-25"
 ---
 Crunchy, savory, perfectly spicy, this simple Asian crunch edamame salad is the ultimate meal prep lunch recipe. It's naturally vegan, gluten free, easy to make and drizzled with a peanut dressing that is to die for.
 

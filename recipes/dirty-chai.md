@@ -12,6 +12,7 @@ cook_time: "PT5M"
 total_time: "PT10M"
 rating: "5"
 image: "assets/dirty-chai.webp"
+added_date: "2026-07-25"
 ---
 A classic chai latte with black tea, spices, and milk plus a shot of espresso.
 

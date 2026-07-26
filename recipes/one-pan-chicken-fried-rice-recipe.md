@@ -20,6 +20,7 @@ cook_time: "10 min"
 total_time: "15 min"
 rating: ""
 image: "assets/069_one-pan-chicken-fried-rice-recipe.jpg"
+added_date: "2026-07-25"
 ---
 It's like I was destined to one day make my own fast One Pan Chicken Fried Rice and post it on a blog somewhere--wait?! What?
 

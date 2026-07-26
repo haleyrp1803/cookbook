@@ -16,6 +16,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: "5"
 image: "assets/077_crispy-potato-salad.jpg"
+added_date: "2026-07-25"
 ---
 This Crispy Potato Salad is creamy, flavorful and the best side dish for your next cookout! It's made with seasoned potatoes that are baked until golden and crisp on the outside. Then, they're tossed in a simple dressing and garnished with herbs. So easy and so delicious!
 

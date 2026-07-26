@@ -14,6 +14,7 @@ cook_time: "60 min"
 total_time: "70 min"
 rating: "4.8"
 image: "assets/011_banana-bread.jpg"
+added_date: "2026-07-25"
 ---
 Put those ripe bananas to use in the best banana bread recipe ever. Moist and delicious, it’s easy to make—one bowl, no need for a mixer!
 

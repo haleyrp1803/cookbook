@@ -20,6 +20,7 @@ cook_time: "45 min"
 total_time: "60 min"
 rating: "5"
 image: "assets/071_vegetable-paella.webp"
+added_date: "2026-07-25"
 ---
 This Vegetable Paella recipe is easy to make in one pot with vibrant veggies, protein-packed chickpeas, and aromatic spiced rice. It’s ready in about 1 hour and can be enjoyed as a mouthwatering Spanish-inspired vegetarian and vegan-friendly main course!
 

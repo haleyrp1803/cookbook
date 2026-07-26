@@ -16,6 +16,7 @@ cook_time: ""
 total_time: ""
 rating: ""
 image: "assets/089_summer-grain-salad.jpg"
+added_date: "2026-07-25"
 ---
 This Summer Grain Salad is the perfect salad to bring to a picnic, or to meal prep for lunches during the week! It's filled with quinoa, farro, radishes, cucumber, cherry tomatoes, red onion, corn, green beans, bell pepper, feta, and a bunch of fresh herbs! The salad gets tossed in a white wine lemon vinaigrette and it's incredibly fresh, texture-filled, and light!
 

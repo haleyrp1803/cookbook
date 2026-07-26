@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT10M"
 rating: "5"
 image: "assets/halloween-mocktail-batch-or-single-serve.webp"
+added_date: "2026-07-25"
 ---
 This easy Halloween mocktail recipe is perfect for both adults and kids and can be made in minutes! With just a few ingredients, you'll be sipping on this delicious spooky non-alcoholic sangria punch in no time.
 

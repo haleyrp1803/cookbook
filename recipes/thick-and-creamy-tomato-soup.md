@@ -21,6 +21,7 @@ cook_time: "PT110M"
 total_time: "PT110M"
 rating: "4.7"
 image: "assets/thick-and-creamy-tomato-soup.jpg"
+added_date: "2026-07-25"
 ---
 A tomato basil soup that's wonderfully comforting and creamy, with only a little bit of actual cream involved.
 

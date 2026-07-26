@@ -17,6 +17,7 @@ cook_time: "40 min"
 total_time: "55 min"
 rating: ""
 image: "assets/020_one-pan-chicken-and-potatoes-for-effortless-cooking-fun.webp"
+added_date: "2026-07-25"
 ---
 Enjoy a hassle-free meal with One Pan Chicken and Potatoes, featuring juicy chicken thighs and crispy potatoes, all seasoned to perfection.
 

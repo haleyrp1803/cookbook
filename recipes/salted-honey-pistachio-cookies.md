@@ -15,6 +15,7 @@ cook_time: "8 min"
 total_time: "38 min"
 rating: "5"
 image: "assets/038_salted-honey-pistachio-cookies.jpg"
+added_date: "2026-07-25"
 ---
 Salted Honey Pistachio Cookies are soft, extra flavorful cookies made with browned butter, sea salt, honey and salted pistachios. This sweet and salty treat is easy to make, too!
 

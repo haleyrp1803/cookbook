@@ -17,6 +17,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: "4.66"
 image: "assets/050_creamy-chicken-pesto-pasta.jpg"
+added_date: "2026-07-25"
 ---
 Tender chicken and pasta in a rich, cheesy pesto cream sauce. Ready in under 30 minutes and easy enough for any weeknight dinner.
 

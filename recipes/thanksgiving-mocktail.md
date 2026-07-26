@@ -12,6 +12,7 @@ cook_time: "P0Y0M0DT0H15M0.000S"
 total_time: "P0Y0M0DT1H0M0.000S"
 rating: "3.5"
 image: "assets/thanksgiving-mocktail.webp"
+added_date: "2026-07-25"
 ---
 Blood orange, thyme and ginger beer (it's non-alcoholic) make this mocktail a light, bright, refreshing way to begin or end the big Thanksgiving meal. If you've never tried it, ginger beer is a spicier, more intensely flavored alternative to ginger ale, and is also delicious on its own.
 

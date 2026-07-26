@@ -16,6 +16,7 @@ cook_time: "25 min"
 total_time: "55 min"
 rating: "4.38"
 image: "assets/084_mediterranean-lentil-salad.webp"
+added_date: "2026-07-25"
 ---
 Packed with fresh Mediterranean ingredients, tender lentils, and a flavorful citrus dressing, this Mediterranean lentil salad is quick to throw together and sure to be a lunch favorite!
 

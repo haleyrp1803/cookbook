@@ -13,6 +13,7 @@ cook_time: "PT15M"
 total_time: "PT15M"
 rating: "4.87"
 image: "assets/easy-chai-latte.webp"
+added_date: "2026-07-25"
 ---
 Let's just say, this chai latte is the perfect mug of fresh brewed black tea, warming spices, a hint of sweetness, and extra frothy milk.
 

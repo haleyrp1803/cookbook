@@ -12,6 +12,7 @@ cook_time: "P0Y0M0DT0H5M0.000S"
 total_time: "P0Y0M0DT0H5M0.000S"
 rating: "5"
 image: "assets/zero-proof-blackberry-mojito.webp"
+added_date: "2026-07-25"
 ---
 The unique combination of fresh thyme and blackberries give this alcohol-free riff on a mojito just as much sophistication and interest as it’s boozier counterparts.
 

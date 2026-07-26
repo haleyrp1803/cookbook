@@ -18,6 +18,7 @@ cook_time: "15 min"
 total_time: "25 min"
 rating: "4.93"
 image: "assets/095_vegetarian-quesadillas.webp"
+added_date: "2026-07-25"
 ---
 These Vegetarian Quesadillas are the best quick weeknight dinner or lunch! Filled with black beans, sweet potato and avocado these are healthy and delicious!
 

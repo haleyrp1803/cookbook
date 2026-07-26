@@ -18,6 +18,7 @@ cook_time: "370 min"
 total_time: "380 min"
 rating: "4.8"
 image: "assets/102_homemade-crockpot-chicken-noodle-soup.jpg"
+added_date: "2026-07-25"
 ---
 This crockpot chicken noodle soup is hearty and comforting, yet incredibly easy to make! No need for a can full of preservatives, homemade is the best!
 

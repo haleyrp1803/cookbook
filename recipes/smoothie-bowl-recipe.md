@@ -16,6 +16,7 @@ cook_time: ""
 total_time: "10 min"
 rating: "5"
 image: "assets/007_smoothie-bowl-recipe.jpg"
+added_date: "2026-07-25"
 ---
 Learn How to Make Smoothie Bowls the right way and add all your favorite toppings to create a cheap, healthy, and super easy breakfast or snack!
 

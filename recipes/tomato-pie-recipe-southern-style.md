@@ -15,6 +15,7 @@ cook_time: "40 min"
 total_time: "60 min"
 rating: "4.83"
 image: "assets/064_tomato-pie-recipe-southern-style.jpg"
+added_date: "2026-07-25"
 ---
 This savory Southern Tomato Pie is made with summer-ripe tomatoes, fresh basil leaves, and topped with a tasty cheese & mayo topping!
 

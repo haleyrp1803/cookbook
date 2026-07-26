@@ -14,6 +14,7 @@ cook_time: "PT5M"
 total_time: ""
 rating: "5"
 image: "assets/pumpkin-spice-latte.webp"
+added_date: "2026-07-25"
 ---
 A homemade pumpkin spice latte that's warm, perfectly sweet and spiced, and dosed with strong coffee.
 

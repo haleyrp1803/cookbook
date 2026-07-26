@@ -12,6 +12,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/blackberry-fizz-mocktail.webp"
+added_date: "2026-07-25"
 ---
 An easy, healthy blackberry mocktail with lime and mint
 

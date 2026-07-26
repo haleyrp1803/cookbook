@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/apple-ginger-fizz-for-fall.webp"
+added_date: "2026-07-25"
 ---
 Fall mocktails are simply the best. With a beautiful flavour combination of apple, ginger, cinnamon and mint, you'll enjoy sipping this drink all season long.
 

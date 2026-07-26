@@ -17,6 +17,7 @@ cook_time: "55 min"
 total_time: "65 min"
 rating: "4.62"
 image: "assets/019_honey-mustard-chicken-potatoes-one-pan.jpg"
+added_date: "2026-07-25"
 ---
 Honey Mustard Chicken & Potatoes is all made in one pan! Juicy, succulent chicken pieces are cooked in the best honey mustard sauce, surrounded by green beans and potatoes for a complete meal!
 

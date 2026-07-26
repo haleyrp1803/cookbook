@@ -15,6 +15,7 @@ cook_time: "PT5M"
 total_time: "PT10M"
 rating: "5"
 image: "assets/brown-sugar-latte-a-delicious-homemade-recipe.jpg"
+added_date: "2026-07-25"
 ---
 This Brown Sugar Latte is a simple recipe that combines espresso, milk, brown sugar, cinnamon and a bit of nutmeg to create a delicious treat
 

@@ -14,6 +14,7 @@ cook_time: "P0Y0M0DT0H5M0.000S"
 total_time: "P0Y0M0DT0H5M0.000S"
 rating: "5"
 image: "assets/mock-mango-fizz.webp"
+added_date: "2026-07-25"
 ---
 Fruity and refreshing, this mango mocktail has all the trappings of a cocktail -- except the tequila. (Add a splash if you miss it; we won't tell.)
 

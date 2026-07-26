@@ -15,6 +15,7 @@ cook_time: "30 min"
 total_time: "40 min"
 rating: "5"
 image: "assets/107_brussel-sprouts-with-balsamic-reduction.jpg"
+added_date: "2026-07-25"
 ---
 These Roasted Brussels Sprouts with Balsamic Reduction & Cranberries make a simple and elegant side dish that both kids and adults love!
 

@@ -14,6 +14,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "4.95"
 image: "assets/pomegranate-mocktails.jpg"
+added_date: "2026-07-25"
 ---
 Easy pomegranate mocktails with mint and lime that can be made for 1 or a crowd.
 

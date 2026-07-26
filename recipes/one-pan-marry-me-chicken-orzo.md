@@ -18,6 +18,7 @@ cook_time: ""
 total_time: ""
 rating: "4.77"
 image: "assets/060_one-pan-marry-me-chicken-orzo.webp"
+added_date: "2026-07-25"
 ---
 Tender chicken breasts paired with a creamy sun-dried tomato sauce and hearty orzo is such a good combination, it'll make you want to marry the person who made it for you! Introducing my One-Pan "Marry Me" Chicken Orzo, an easy, delicious take on the classic "Marry Me" chicken. This dish is the perfect weeknight dinner: it comes together with just one pan and and in a matter of minutes, making it the perfect cozy and comforting weeknight dinner.
 

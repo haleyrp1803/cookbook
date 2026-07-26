@@ -42,6 +42,7 @@ cook_time: "PT0S"
 total_time: "PT2H30M"
 rating: "5"
 image: "assets/slow-cooker-cajun-alfredo.jpg"
+added_date: "2026-07-25"
 ---
 Chicken, andouille sausage, and Cajun seasoning take this slow-cooker Cajun Alfredo to the next level.
 

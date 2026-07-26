@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "5 min"
 rating: "4.67"
 image: "assets/005_my-go-to-smoothie-bowl-5-minutes.jpg"
+added_date: "2026-07-25"
 ---
 My go-to 5-minute smoothie bowl with just 3 ingredients! Satisfying, nutrient-rich, and naturally sweet! A healthy, plant-based breakfast or snack.
 

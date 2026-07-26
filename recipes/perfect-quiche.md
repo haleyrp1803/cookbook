@@ -25,6 +25,7 @@ cook_time: "PT4620S"
 total_time: "PT6420S"
 rating: ""
 image: "assets/perfect-quiche.jpg"
+added_date: "2026-07-25"
 ---
 With its savory custard and flaky crust, this brunch classic feels fancy, and it's surprisingly easy to make.
 

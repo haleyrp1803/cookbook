@@ -14,6 +14,7 @@ cook_time: ""
 total_time: "PT10M"
 rating: "5"
 image: "assets/non-alcoholic-christmas-punch.webp"
+added_date: "2026-07-25"
 ---
 An easy non alcoholic Christmas punch for the holidays. Perfect for pregnancy, kids and guests who don't drink alcohol.
 

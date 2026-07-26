@@ -18,6 +18,7 @@ cook_time: "15 min"
 total_time: "35 min"
 rating: "4.99"
 image: "assets/076_christmas-salad-with-honey-mustard-dressing.jpg"
+added_date: "2026-07-25"
 ---
 Simple to put together, healthy, and pairs perfectly with just about any meal!
 

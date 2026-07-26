@@ -14,6 +14,7 @@ cook_time: ""
 total_time: ""
 rating: ""
 image: "assets/015_orange-cardamom-fig-cake.jpg"
+added_date: "2026-07-25"
 ---
 ## Ingredients
 

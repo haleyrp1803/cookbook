@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "15 min"
 rating: "5"
 image: "assets/088_salad-with-asian-dressing-high-protein.jpg"
+added_date: "2026-07-25"
 ---
 This high-protein Salad with Asian Dressing is crunchy, healthy, and budget-friendly. Meal prep this quick and easy vegan salad for the week.
 

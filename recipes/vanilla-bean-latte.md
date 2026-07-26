@@ -19,6 +19,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/vanilla-bean-latte.jpg"
+added_date: "2026-07-25"
 ---
 Vanilla bean latte is easy to make at home and it tastes so much better than coffeeshop versions. This quick and simple vanilla bean coffee can be enjoyed hot or iced.
 

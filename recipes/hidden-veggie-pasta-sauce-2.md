@@ -17,6 +17,7 @@ cook_time: "40 min"
 total_time: "55 min"
 rating: ""
 image: "assets/058_hidden-veggie-pasta-sauce.jpg"
+added_date: "2026-07-25"
 ---
 This hidden veggie pasta sauce is loaded with flavor, a rich texture, and many vegetables. Roasted veggies are blended with broth, soy milk, nutritional yeast, and seasonings to create a rich, creamy sauce full of health benefits as flavor.
 

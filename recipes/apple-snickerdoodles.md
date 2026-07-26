@@ -14,6 +14,7 @@ cook_time: "15 min"
 total_time: "215 min"
 rating: "5"
 image: "assets/024_apple-snickerdoodles.jpg"
+added_date: "2026-07-25"
 ---
 These apple snickerdoodles combine the cozy fall flavors of brown butter, warm cinnamon, and caramelized apples. The gooey warm apples inside a chewy, cinnamon sugar-coated snickerdoodle makes these an addicting treat to get you into the fall baking mood!
 

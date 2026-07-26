@@ -13,6 +13,7 @@ cook_time: "PT1H10M"
 total_time: "PT7H"
 rating: "4.7"
 image: "assets/homemade-blueberry-pie.webp"
+added_date: "2026-07-25"
 ---
 After a few additional years of testing, this is now the best blueberry pie. As the pie bakes, expect a messy, bubbly, and juicy filling. As the pie cools, the filling sets into a jammy, yet sliceable consistency. For a truly out-of-this-world summer dessert experience, serve each flavorful slice with vanilla ice cream.
 

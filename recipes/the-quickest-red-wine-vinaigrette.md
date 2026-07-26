@@ -23,6 +23,7 @@ cook_time: ""
 total_time: "3 minutes"
 rating: "4.2"
 image: "assets/the-quickest-red-wine-vinaigrette.webp"
+added_date: "2026-07-25"
 ---
 This easy recipe for tangy red wine vinegar dressing has a kiss of Dijon mustard and maple syrup for balance. Highly adaptable, it comes together in a flash.
 

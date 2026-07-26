@@ -14,6 +14,7 @@ cook_time: "14 min"
 total_time: "29 min"
 rating: "4.96"
 image: "assets/034_lemon-curd-thumbprint-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These lemon curd thumbprint cookies are deliciously spiced with ginger and cinnamon.
 

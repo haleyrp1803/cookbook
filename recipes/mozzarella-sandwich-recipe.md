@@ -15,6 +15,7 @@ cook_time: "5 min"
 total_time: "15 min"
 rating: "5"
 image: "assets/093_mozzarella-sandwich-recipe.jpg"
+added_date: "2026-07-25"
 ---
 This Mozzarella Sandwich is made with fresh tomatoes, pesto and sourdough bread. It's a caprese panini-style sandwich that takes 15 mins to prep and make!
 

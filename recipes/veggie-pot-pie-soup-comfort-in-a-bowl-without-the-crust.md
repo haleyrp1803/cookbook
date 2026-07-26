@@ -18,6 +18,7 @@ cook_time: "30 min"
 total_time: "45 min"
 rating: ""
 image: "assets/105_veggie-pot-pie-soup-comfort-in-a-bowl-without-the-crust.webp"
+added_date: "2026-07-25"
 ---
 A creamy, hearty soup loaded with tender vegetables and savory herbs, Veggie Pot Pie Soup captures all the comforting flavors of pot pie without the crust.
 

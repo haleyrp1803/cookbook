@@ -14,6 +14,7 @@ cook_time: "PT10M"
 total_time: "PT15M"
 rating: "4.97"
 image: "assets/golden-milk-turmeric-milk.webp"
+added_date: "2026-07-25"
 ---
 Golden milk (turmeric milk) reigns supreme for a healthy, healing, and anti-inflammatory drink! Bonus — it's super delicious. Watch the video above!
 

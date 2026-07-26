@@ -17,6 +17,7 @@ cook_time: "25 min"
 total_time: "30 min"
 rating: "4.95"
 image: "assets/041_coconut-chickpea-curry.jpg"
+added_date: "2026-07-25"
 ---
 The ultimate weeknight dinner, this coconut chickpea curry is packed with flavor and comes together in less than 30 minutes with easy pantry ingredients.
 

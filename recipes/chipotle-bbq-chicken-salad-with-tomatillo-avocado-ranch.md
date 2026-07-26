@@ -17,6 +17,7 @@ cook_time: "15 min"
 total_time: "35 min"
 rating: "5"
 image: "assets/075_chipotle-bbq-chicken-salad-with-tomatillo-avocado-ranch.jpg"
+added_date: "2026-07-25"
 ---
 Chipotle BBQ Chicken Salad with Tomatillo Avocado Ranch is WAY better than your favorite restaurant salad at a fraction of the cost tossed with tender chipotle barbecue chicken and the most intoxicating dressing EVER! This BBQ Chicken Salad is is Ah-mazing! I was going for a CPK Copycat but I think your taste buds will agree this salad is even better!
 

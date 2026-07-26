@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "30 min"
 rating: "4.85"
 image: "assets/079_easy-fruit-salad.jpg"
+added_date: "2026-07-25"
 ---
 Made with a bright honey-lime dressing and colorful fresh fruit, this easy fruit salad recipe is a perfect summer side dish! It's super flexible—feel free to toss in your favorite in-season fruit. Find some of my favorite variations in the blog post above.
 

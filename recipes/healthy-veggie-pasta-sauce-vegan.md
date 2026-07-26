@@ -18,6 +18,7 @@ cook_time: "45 min"
 total_time: "55 min"
 rating: "5"
 image: "assets/056_healthy-veggie-pasta-sauce-vegan.jpg"
+added_date: "2026-07-25"
 ---
 This delicious Veggie Pasta Sauce is made with six vibrant vegetables and blended smooth with raw cashews to make a flavorful healthy vegetable pasta loaded with incredible nutrients! It is perfect for sneaking vegetables into meals for any picky eaters! No one would ever guess this creamy pasta sauce is loaded with a hearty serving of vegetables! (This recipe is dairy-free, gluten-free, and vegan)
 

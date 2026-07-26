@@ -18,6 +18,7 @@ cook_time: "15 min"
 total_time: "30 min"
 rating: "5"
 image: "assets/036_pumpkin-miso-caramel-cookies.jpg"
+added_date: "2026-07-25"
 ---
 Pumpkin! Miso! Caramel! Brown Butter! What else do you really need? Not much in this swirled and gooey cookie that has a base that tastes like pumpkin pie, and a swirl that is a decadent, sticky miso caramel. It's a super simple recipe, with beautifully autumnal results.
 

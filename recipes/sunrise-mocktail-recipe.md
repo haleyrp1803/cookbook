@@ -11,6 +11,7 @@ cook_time: ""
 total_time: ""
 rating: "4.91"
 image: "assets/sunrise-mocktail-recipe.webp"
+added_date: "2026-07-25"
 ---
 This easy sunrise mocktail is perfect for 1 or a crowd.
 

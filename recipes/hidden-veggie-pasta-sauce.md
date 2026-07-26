@@ -17,6 +17,7 @@ cook_time: "40 min"
 total_time: "55 min"
 rating: "5"
 image: "assets/057_hidden-veggie-pasta-sauce-2.jpg"
+added_date: "2026-07-25"
 ---
 This simple hidden veggie pasta sauce is packed full of flavor. Loaded with your favorite fresh garden vegetables, this light and easy sauce is perfect for pasta!
 

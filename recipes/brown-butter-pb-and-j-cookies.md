@@ -14,6 +14,7 @@ cook_time: "12 min"
 total_time: ""
 rating: ""
 image: "assets/025_brown-butter-pb-j-cookies.webp"
+added_date: "2026-07-25"
 ---
 These Brown Butter PB & J Cookies are a delicious mashup of the good ole' classic. The brown butter makes them even more addicting.
 

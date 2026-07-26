@@ -15,6 +15,7 @@ cook_time: "PT60M"
 total_time: "PT120M"
 rating: "4.98"
 image: "assets/easy-apple-pie.jpg"
+added_date: "2026-07-25"
 ---
 This is hands down the BEST and easiest apple pie recipe! It has a tender, flaky, homemade pie crust with apple slices drenched in sugar and warm spices like cinnamon and nutmeg.
 

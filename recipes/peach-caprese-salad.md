@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "15 min"
 rating: "5"
 image: "assets/087_peach-caprese-salad.jpg"
+added_date: "2026-07-25"
 ---
 This fresh and tangy Peach Caprese Salad features sweet peaches, creamy burrata cheese, and juicy tomatoes. A perfect blend of summery flavors, this simple yet delicious salad is the ideal late summer side dish!
 

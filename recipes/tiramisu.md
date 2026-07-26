@@ -16,6 +16,7 @@ cook_time: ""
 total_time: "10 min"
 rating: "4.97"
 image: "assets/039_tiramisu.jpg"
+added_date: "2026-07-25"
 ---
 Creamy, delicious and unbelievably EASY tiramisu recipe made with coffee soaked lady fingers, sweet and creamy mascarpone, and cocoa powder dusted on top.
 

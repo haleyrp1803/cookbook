@@ -16,6 +16,7 @@ cook_time: "10 min"
 total_time: "15 min"
 rating: "4.9"
 image: "assets/003_ham-and-cheese-breakfast-quesadilla.jpg"
+added_date: "2026-07-25"
 ---
 Ham and Cheese Breakfast Quesadilla are loaded with diced ham, hard boiled eggs, and plenty of gooey chees! This is a hearty on the go breakfast for super busy mornings!
 

@@ -14,6 +14,7 @@ cook_time: "10 min"
 total_time: "180 min"
 rating: "4.98"
 image: "assets/032_espresso-chocolate-chip-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These espresso chocolate chip cookies are a grown-up version of a classic chocolate chip cookie! Made with browned butter, espresso grounds, and packed with chocolate, they are the best cookies for coffee lovers!
 

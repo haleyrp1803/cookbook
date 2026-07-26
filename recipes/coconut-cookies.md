@@ -15,6 +15,7 @@ cook_time: "9 min"
 total_time: "54 min"
 rating: "4.8"
 image: "assets/030_coconut-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These Coconut Cookies are thick and chewy and packed with sweet coconut! This cookie will be a favorite among coconut fans.
 

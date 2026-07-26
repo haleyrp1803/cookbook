@@ -17,6 +17,7 @@ cook_time: "15 min"
 total_time: "35 min"
 rating: "4.87"
 image: "assets/048_chicken-yakisoba.jpg"
+added_date: "2026-07-25"
 ---
 This Yakisoba is a hearty, veggie filled, chicken and noodle stir-fry dish that's amazingly delicious! It's saucy and perfectly seasoned. It's a comforting dish that's and sure to satisfy those take-out cravings.
 

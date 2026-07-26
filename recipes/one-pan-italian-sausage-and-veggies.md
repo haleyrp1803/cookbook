@@ -22,6 +22,7 @@ cook_time: "30 min"
 total_time: "55 min"
 rating: "4.92"
 image: "assets/021_one-pan-italian-sausage-and-veggies.webp"
+added_date: "2026-07-25"
 ---
 One-Pan Italian Sausage and Veggies is a flavorful, wholesome meal loaded with roasted sausage, colorful veggies, and a zesty Italian seasoning blend. Finish with Parmesan and fresh herbs for an simple, satisfying dinner!
 

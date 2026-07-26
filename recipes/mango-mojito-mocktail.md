@@ -14,6 +14,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/mango-mojito-mocktail.webp"
+added_date: "2026-07-25"
 ---
 An easy mango mocktail with lime and mint, the perfect mojito for summer.
 

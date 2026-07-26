@@ -14,6 +14,7 @@ cook_time: "PT10M"
 total_time: "PT18M"
 rating: "4.43"
 image: "assets/buttermilk-pancakes.jpg"
+added_date: "2026-07-25"
 ---
 Simply perfect buttermilk pancakes. This is a recipe you will use over and over again.
 

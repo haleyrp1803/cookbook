@@ -15,6 +15,7 @@ cook_time: "14 min"
 total_time: "29 min"
 rating: "5"
 image: "assets/037_raspberry-white-chocolate-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These raspberry white chocolate cookies are a no chill recipe. They are a chewy and buttery cookies full of white chocolate chips and frozen raspberries.
 

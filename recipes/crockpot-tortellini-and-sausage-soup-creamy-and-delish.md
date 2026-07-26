@@ -18,6 +18,7 @@ cook_time: ""
 total_time: ""
 rating: ""
 image: "assets/101_crockpot-tortellini-sausage-soup-creamy-delish.jpg"
+added_date: "2026-07-25"
 ---
 If you're looking for easy slow cooker soup recipes, your search ends here. This cheap and simple recipe is a real family pleaser! Even the kids love it. It's made with just 6 simple ingredients: frozen tortellini, sausage, cream cheese, tomatoes, broth and spinach.
 

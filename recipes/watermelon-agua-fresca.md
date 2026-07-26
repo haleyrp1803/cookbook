@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT10M"
 rating: "5"
 image: "assets/watermelon-agua-fresca.webp"
+added_date: "2026-07-25"
 ---
 This classic watermelon agua fresca recipe is easy to make and perfect to sip on warm days.
 

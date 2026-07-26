@@ -16,6 +16,7 @@ cook_time: "10 min"
 total_time: "20 min"
 rating: "5"
 image: "assets/054_green-mac-and-cheese.jpg"
+added_date: "2026-07-25"
 ---
 This fantastic and fun green mac and cheese will be a hit with the whole family! It's a great way to sneak some veggies into a pasta dish.
 

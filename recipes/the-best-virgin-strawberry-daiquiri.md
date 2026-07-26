@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/the-best-virgin-strawberry-daiquiri.jpg"
+added_date: "2026-07-25"
 ---
 An easy virgin strawberry daiquiri that can be made at home. Make just 1 or make this mocktail in a large batch for a crowd.
 

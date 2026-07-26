@@ -13,6 +13,7 @@ cook_time: "60 min"
 total_time: "75 min"
 rating: "4.93"
 image: "assets/063_classic-lasagna-recipe.webp"
+added_date: "2026-07-25"
 ---
 This Classic Lasagna Recipe is so easy and tastes amazing! Filled with Italian sausage, spinach and ricotta cheese, you can't go wrong with this comfort dish!
 

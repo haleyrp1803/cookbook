@@ -16,6 +16,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: ""
 image: "assets/012_blueberry-sour-cream-muffins.jpg"
+added_date: "2026-07-25"
 ---
 Blueberry Sour Cream Muffins that are moist, tangy, and bursting with blueberries. Sprinkle these muffins with coarse sugar for a delicious bakery-style breakfast at home.
 

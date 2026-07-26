@@ -15,6 +15,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/pistachio-coffee-pistachio-latte.jpg"
+added_date: "2026-07-25"
 ---
 Pistachio coffee is an absolute treat to sip upon with sweet, creamy & nutty elements to savour. This pistachio latte recipe is quick & easy to make. It's also far cheaper than buying one from a coffee shop.
 

@@ -35,6 +35,7 @@ cook_time: "PT0S"
 total_time: "PT30M"
 rating: "4.44"
 image: "assets/marry-me-gnocchi.jpg"
+added_date: "2026-07-25"
 ---
 This marry me gnocchi is our newest take on the Delish original viral recipe, ready in 30 minutes with minimal ingredients.
 

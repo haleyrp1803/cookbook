@@ -16,6 +16,7 @@ cook_time: ""
 total_time: "PT10M"
 rating: "5"
 image: "assets/almond-milk-latte.jpg"
+added_date: "2026-07-25"
 ---
 This almond milk latte is sweetened using homemade cardamom syrup. It’s smooth, creamy and enhanced by gentle hints of vanilla, cardamom and rosewater. If you enjoy flavoured lattes give this one a go.
 

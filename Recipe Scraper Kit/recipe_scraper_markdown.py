@@ -25,6 +25,8 @@ import mimetypes
 import re
 import sys
 import time
+import subprocess
+from datetime import date
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
@@ -305,6 +307,15 @@ def parse_keywords(value: Any) -> list[str]:
     return unique(re.split(r"[,;|]", text)) if text else []
 
 
+def first_or_joined(value: Any) -> str:
+    if isinstance(value, list):
+        parts = unique(clean_text(item) for item in value)
+        if len(parts) >= 2 and parts[1].casefold().startswith(parts[0].casefold()):
+            return parts[1]
+        return ", ".join(parts)
+    return clean_text(value)
+
+
 def parse_rating(value: Any) -> tuple[str, str]:
     if not isinstance(value, dict):
         return "", ""
@@ -331,9 +342,9 @@ def parse_recipe(data: dict[str, Any], source_url: str, soup: BeautifulSoup) -> 
         prep_time=clean_text(data.get("prepTime")),
         cook_time=clean_text(data.get("cookTime")),
         total_time=clean_text(data.get("totalTime")),
-        servings=clean_text(data.get("recipeYield")),
+        servings=first_or_joined(data.get("recipeYield")),
         source_category=clean_text(data.get("recipeCategory")),
-        cuisine=clean_text(data.get("recipeCuisine")),
+        cuisine=first_or_joined(data.get("recipeCuisine")),
         keywords=parse_keywords(data.get("keywords")),
         ingredients=ingredients,
         instructions=flatten_instructions(data.get("recipeInstructions")),
@@ -487,6 +498,7 @@ def write_markdown(
         f"total_time: {yaml_quote(recipe.total_time)}",
         f"rating: {yaml_quote(recipe.rating)}",
         f"image: {yaml_quote(image_reference)}",
+        f"added_date: {yaml_quote(date.today().isoformat())}",
         "---",
     ])
     if recipe.description:
@@ -517,10 +529,23 @@ def write_markdown(
     destination.write_text("\n".join(lines), encoding="utf-8")
 
 
-def update_index(recipes_dir: Path) -> None:
-    filenames = sorted(path.name for path in recipes_dir.glob("*.md"))
-    path = recipes_dir / "recipe-index.json"
-    path.write_text(json.dumps(filenames, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+def update_index(cookbook_root: Path) -> None:
+    script = cookbook_root / "scripts" / "build_recipe_index.py"
+    if not script.exists():
+        raise FileNotFoundError(
+            "Missing scripts/build_recipe_index.py; the cookbook index could not be updated."
+        )
+    result = subprocess.run(
+        [sys.executable, str(script)],
+        cwd=cookbook_root,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if result.stdout.strip():
+        LOGGER.info(result.stdout.strip())
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or "Recipe index generation failed")
 
 
 def append_csv(path: Path, headers: list[str], row: dict[str, Any]) -> None:
@@ -631,7 +656,7 @@ def main() -> int:
             time.sleep(max(args.delay, 0))
 
     if successful and not args.no_index:
-        update_index(recipes_dir)
+        update_index(root)
         LOGGER.info("Updated recipes/recipe-index.json")
     LOGGER.info("Finished: %d succeeded, %d failed", successful, len(urls) - successful)
     LOGGER.info("Output root: %s", root)

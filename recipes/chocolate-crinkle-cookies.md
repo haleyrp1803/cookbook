@@ -15,6 +15,7 @@ cook_time: "10 min"
 total_time: "265 min"
 rating: "4.97"
 image: "assets/029_chocolate-crinkle-cookies.jpg"
+added_date: "2026-07-25"
 ---
 Rich and fudgy Chocolate Crinkle Cookies are as fun to make as they are delicious and indulgent! Made using pantry staples and simple steps, these cookies are perfect to bake for the holidays or any time the craving hits.
 

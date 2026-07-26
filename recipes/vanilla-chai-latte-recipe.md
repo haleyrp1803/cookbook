@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/vanilla-chai-latte-recipe.jpg"
+added_date: "2026-07-25"
 ---
 Start your mornings or enjoy your afternoons with this easy Vanilla Chai Latte Recipe. You'll save so much money making your own!
 

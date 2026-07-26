@@ -17,6 +17,7 @@ cook_time: "50 min"
 total_time: "60 min"
 rating: "4.79"
 image: "assets/009_apple-cider-pound-cake.jpg"
+added_date: "2026-07-25"
 ---
 Apple cider pound cake is a rich buttery treat infused with festive flavor. Perfect for dessert or as sweet breakfast or snack, you'll love making and eating this yummy recipe!
 

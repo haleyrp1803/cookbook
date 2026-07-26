@@ -13,6 +13,7 @@ cook_time: ""
 total_time: ""
 rating: "5"
 image: "assets/the-best-shirley-temple-mocktail.jpg"
+added_date: "2026-07-25"
 ---
 An easy Shirley Temple mocktail recipe made with ginger ale, grenadine and fresh lime juice. Perfect for kids, pregnant women and non-drinkers.
 

@@ -24,6 +24,7 @@ cook_time: "PT10M"
 total_time: "PT25M"
 rating: "4.91"
 image: "assets/deviled-eggs.jpg"
+added_date: "2026-07-25"
 ---
 This Classic Deviled Eggs recipe is always a winner, made with simple ingredients including pickle relish, mayonnaise, mustard, salt, and pepper.
 

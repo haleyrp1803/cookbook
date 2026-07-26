@@ -16,6 +16,7 @@ cook_time: "30 min"
 total_time: ""
 rating: "4.93"
 image: "assets/047_butternut-squash-pasta-sauce.webp"
+added_date: "2026-07-25"
 ---
 A creamy vegan butternut squash pasta sauce made with simple healthy ingredients.
 

@@ -15,6 +15,7 @@ cook_time: ""
 total_time: ""
 rating: "4.98"
 image: "assets/083_italian-pasta-salad.jpg"
+added_date: "2026-07-25"
 ---
 This pasta salad with Italian dressing, colorful veggies, olives, cheese, and pepperoncini is fresh, zesty, and delicious. It's a perfect side dish to make ahead for summer picnics and cookouts.
 

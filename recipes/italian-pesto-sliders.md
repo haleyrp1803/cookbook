@@ -15,6 +15,7 @@ cook_time: "20 min"
 total_time: "30 min"
 rating: "5"
 image: "assets/092_italian-pesto-sliders.jpg"
+added_date: "2026-07-25"
 ---
 ## Ingredients
 

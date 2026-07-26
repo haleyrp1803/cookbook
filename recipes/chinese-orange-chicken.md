@@ -16,6 +16,7 @@ cook_time: "PT15M"
 total_time: ""
 rating: "4.95"
 image: "assets/chinese-orange-chicken.webp"
+added_date: "2026-07-25"
 ---
 Recipe video above. This is a recipe for Chinese Orange Chicken that makes impressively crispy chicken pieces without deep frying. The sauce has great orange flavour, it's not too sweet, and I love the background hint of ginger!The chicken does lose crispiness once tossed with sauce, but you'll still get crispy bits. It's not a flaw, it's the way it is! More importantly though, the sauce really clings to the surface of the chicken so you get a good amount of that lovey orange sauce with every bite.Source: Loosely based on the Orange Chicken by Woks of Life, though I used my no-deep-fry method and tweaked the sauce to my taste.
 

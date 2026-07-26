@@ -19,6 +19,7 @@ cook_time: "20 min"
 total_time: "35 min"
 rating: "4.79"
 image: "assets/042_easy-thai-red-curry-chicken-one-pot-30-minute-meal.jpg"
+added_date: "2026-07-25"
 ---
 Thai Red Curry Chicken is full of flavor, so easy to make at home, and healthier than the take-out kind! It's chicken and veggies, stewed in a creamy coconut red curry sauce. This recipe uses mostly pantry staples, or ingredients that can be easily found!
 

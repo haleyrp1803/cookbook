@@ -16,6 +16,7 @@ cook_time: "70 min"
 total_time: "85 min"
 rating: "5"
 image: "assets/051_creamy-roasted-butternut-squash-orzo.jpg"
+added_date: "2026-07-25"
 ---
 This creamy orzo pasta with roasted butternut squash, kale, fresh sage and Parmesan cheese is a delicious and nutritious dinner option.
 

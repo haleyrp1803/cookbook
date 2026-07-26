@@ -16,6 +16,7 @@ cook_time: "35 min"
 total_time: "50 min"
 rating: "4.96"
 image: "assets/014_moist-blueberry-buckle-cake-with-cinnamon-streusel-topping.jpg"
+added_date: "2026-07-25"
 ---
 This Blueberry Buckle Cake gives you a tender, moist cake bursting with fresh blueberries and topped with the best crumbly, buttery streusel topping. It's perfect for breakfast, brunch, or dessert! Made with simple ingredients & in less than an hour, this cake is perfect to bring to your next gathering with family and friends.
 

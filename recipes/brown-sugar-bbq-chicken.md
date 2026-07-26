@@ -32,6 +32,7 @@ cook_time: "PT0S"
 total_time: "PT4H15M"
 rating: "4.647059"
 image: "assets/brown-sugar-bbq-chicken.jpg"
+added_date: "2026-07-25"
 ---
 This amazing brown sugar BBQ chicken recipe is the perfect BBQ main. The best part? The slow cooker does all the work for you!
 

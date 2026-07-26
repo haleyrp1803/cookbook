@@ -11,6 +11,7 @@ cook_time: ""
 total_time: ""
 rating: "5"
 image: "assets/easy-blood-orange-mocktail.webp"
+added_date: "2026-07-25"
 ---
 This gorgeous blood orange mocktail recipe is so simple to make and just divine to drink. Perfect for Christmas or other special occasions.
 

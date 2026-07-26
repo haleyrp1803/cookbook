@@ -15,6 +15,7 @@ cook_time: "1 hr 10 min"
 total_time: "1 hr 25 min"
 rating: "4.9"
 image: "assets/103_roasted-butternut-squash-soup.jpg"
+added_date: "2026-07-25"
 ---
 This easy, delicious, vegan roasted butternut squash soup sums up the taste of the holidays in one spoon. Rosemary, sage and thyme, need I say more?
 

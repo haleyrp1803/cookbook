@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/peach-mocktail.jpg"
+added_date: "2026-07-25"
 ---
 This simple peach mocktail with basil, lemon and honey can be made in minutes and tastes divine.
 

@@ -19,6 +19,7 @@ cook_time: ""
 total_time: "20 min"
 rating: ""
 image: "assets/082_harvest-cobb-salad-with-a-honey-apple-cider-vinaigrette.jpg"
+added_date: "2026-07-25"
 ---
 Harvest Cobb Chicken Salad with a Honey Apple Cider Vinaigrette is filled with crisp fall apples, roasted butternut squash, and all of the delicious things of fall come together in this mouthwatering salad.
 

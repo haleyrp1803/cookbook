@@ -31,6 +31,7 @@ cook_time: "PT0S"
 total_time: "PT6H30M"
 rating: "3.913793"
 image: "assets/slow-cooker-creamy-lemon-herb-chicken.jpg"
+added_date: "2026-07-25"
 ---
 This slow cooker creamy lemon herb chicken spends all day bubbling along and results in everything you want in a meal: delicious, comforting, and easy.
 

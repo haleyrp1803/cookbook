@@ -16,6 +16,7 @@ cook_time: "40 min"
 total_time: "50 min"
 rating: "4.32"
 image: "assets/017_tablespoon-italian-lemon-cake.jpg"
+added_date: "2026-07-25"
 ---
 Italian Lemon Cake a delicious moist Cake, and all you need is a tablespoon for measurement. Fast and Easy and so good. The perfect Breakfast, Snack or Dessert Cake Recipe.
 

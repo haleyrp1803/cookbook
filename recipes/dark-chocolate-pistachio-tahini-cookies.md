@@ -15,6 +15,7 @@ cook_time: "10 min"
 total_time: "220 min"
 rating: "4.49"
 image: "assets/031_dark-chocolate-pistachio-tahini-cookies.jpg"
+added_date: "2026-07-25"
 ---
 Brown Butter, Dark Chocolate Chip Pistachio Tahini Cookies are a delicious twist on chocolate chip cookie! They’re made with toasted pistachios, caramelly brown butter, sesame tahini, a hit of sea salt, and lots of melty dark chocolate. They’re sweet, salty, with crispy edges, gooey centers, and that rich nutty flavor that makes them one of our most popular cookie recipes!
 

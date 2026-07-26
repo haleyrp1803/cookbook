@@ -17,6 +17,7 @@ cook_time: "15 min"
 total_time: "25 min"
 rating: "5"
 image: "assets/061_white-bean-sun-dried-tomato-gnocchi.jpg"
+added_date: "2026-07-25"
 ---
 White Bean Sun-Dried Tomato Gnocchi is an easy one pan healthy dinner that’s ready in less than 30 minutes. And it come together using classic hearty ingredients that you probably have in your kitchen right now.
 

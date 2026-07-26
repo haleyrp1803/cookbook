@@ -16,6 +16,7 @@ cook_time: "40 min"
 total_time: "50 min"
 rating: "4.73"
 image: "assets/094_sweet-potato-black-bean-quesadilla.jpg"
+added_date: "2026-07-25"
 ---
 Sweet Potato & Black Bean Quesadillas are a nutritious meal idea. Packed with protein and fiber, it's a great choice for your Meatless Monday menu!
 

@@ -13,6 +13,7 @@ cook_time: ""
 total_time: ""
 rating: "4.95"
 image: "assets/086_mexican-street-corn-salad.jpg"
+added_date: "2026-07-25"
 ---
 This easy Mexican street corn salad is the ultimate summer side dish! Lightly creamy, spicy & bright, it's a recipe you'll make again and again.
 

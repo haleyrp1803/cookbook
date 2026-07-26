@@ -13,6 +13,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/strawberry-basil-mocktail.webp"
+added_date: "2026-07-25"
 ---
 An easy, healthy strawberry basil mocktail. Make for 1 or a crowd. Combines strawberries, fresh basil, a hint of lime and sparkling water.
 

@@ -19,6 +19,7 @@ cook_time: "PT25M"
 total_time: "PT45M"
 rating: "5"
 image: "assets/baked-chicken-tenders.jpg"
+added_date: "2026-07-25"
 ---
 These Baked Chicken Tenders are tossed in a flavorful batter and coated in crispy, buttery panko breadcrumbs. They're juicy on the inside, crispy on the outside, and make a super easy dinner idea!
 

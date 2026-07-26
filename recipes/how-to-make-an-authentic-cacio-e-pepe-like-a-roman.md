@@ -15,6 +15,7 @@ cook_time: "15 min"
 total_time: ""
 rating: "4.72"
 image: "assets/059_how-to-make-an-authentic-cacio-e-pepe-like-a-roman.webp"
+added_date: "2026-07-25"
 ---
 A cacio e pepe is so simple, the whole recipe is 3 ingredients! Only pecorino romano, black pepper and pasta, this recipe is the traditional one you'll find in any Roman restaurant.
 

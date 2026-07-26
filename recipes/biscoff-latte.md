@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "PT5M"
 rating: "5"
 image: "assets/biscoff-latte.jpg"
+added_date: "2026-07-25"
 ---
 Biscoff latte is an easy-to-make treat for coffee lovers. The sweet caramelised and warming spiced profile of cookie butter works wonders in this Biscoff coffee recipe to create an indulgent drink worthy of cosying up with.
 

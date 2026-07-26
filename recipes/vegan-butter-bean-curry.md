@@ -17,6 +17,7 @@ cook_time: "30 min"
 total_time: "40 min"
 rating: "4.5"
 image: "assets/043_vegan-butter-bean-curry.jpg"
+added_date: "2026-07-25"
 ---
 This quick and easy vegan butter bean curry is just the perfect recipe for an easy weeknight dinner. It's a low-fat, plant-based curry full of protein and flavour that pairs perfectly with rice or naan bread.
 

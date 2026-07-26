@@ -14,6 +14,7 @@ cook_time: "8 min"
 total_time: "143 min"
 rating: "4.7"
 image: "assets/035_perfect-pumpkin-spice-cookies-theamazingfood.webp"
+added_date: "2026-07-25"
 ---
 Fall baking has always been my favorite time of year. I love the smell of cinnamon and nutmeg filling up the kitchen, and my kids get excited when they come
 

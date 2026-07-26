@@ -13,6 +13,7 @@ cook_time: "11 min"
 total_time: ""
 rating: "4.94"
 image: "assets/028_chai-cookies.jpg"
+added_date: "2026-07-25"
 ---
 These are the best chai cookies! They are super chewy cookies, made with warm fall spices and brown butter, and rolled in spiced sugar. They're the perfect cookie for fall and the Christmas holiday season!
 

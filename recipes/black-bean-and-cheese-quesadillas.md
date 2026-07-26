@@ -18,6 +18,7 @@ cook_time: "10 min"
 total_time: "15 min"
 rating: "5"
 image: "assets/091_black-bean-and-cheese-quesadillas.jpg"
+added_date: "2026-07-25"
 ---
 Simple and easy, the perfect lunch or party appetizer! These Black Bean and Cheese Quesadillas are so simple and full of flavor. I seasoned my beans and corn then added them to the tortilla with cheese.
 

@@ -15,6 +15,7 @@ cook_time: "20 min"
 total_time: ""
 rating: "4.83"
 image: "assets/049_creamy-butternut-squash-mac-and-cheese.jpg"
+added_date: "2026-07-25"
 ---
 Creamy, healthy butternut squash mac and cheese is cozy, comforting and so much better than regular mac and cheese. You’ll need less than 30 minutes to make this healthy comfort food! Kids LOVE it!
 

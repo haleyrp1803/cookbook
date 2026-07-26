@@ -20,6 +20,7 @@ cook_time: "30 min"
 total_time: "40 min"
 rating: "5"
 image: "assets/085_mediterranean-rice-salad.jpg"
+added_date: "2026-07-25"
 ---
 This delicious and vibrant Mediterranean Rice Salad is so easy to make and the perfect addition to a BBQ or summer dinner party.
 

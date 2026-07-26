@@ -19,6 +19,7 @@ cook_time: "30 min"
 total_time: "40 min"
 rating: "4.85"
 image: "assets/052_creamy-tuscan-orzo.webp"
+added_date: "2026-07-25"
 ---
 This creamy Tuscan Orzo with spinach, sun-dried tomatoes, cannellini beans, and chewy orzo pasta is the best creamy & cozy weeknight dinner!
 

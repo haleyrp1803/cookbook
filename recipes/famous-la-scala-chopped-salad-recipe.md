@@ -17,6 +17,7 @@ cook_time: ""
 total_time: "20 min"
 rating: "4.89"
 image: "assets/080_famous-la-scala-chopped-salad-recipe.jpg"
+added_date: "2026-07-25"
 ---
 This famous La Scala Chopped Salad is so easy to make at home! Toss the dressing and all of the ingredients together and enjoy on its own as a main dish or healthy lunch, or serve it on the side with your favorite protein.
 

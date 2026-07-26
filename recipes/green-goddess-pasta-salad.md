@@ -18,6 +18,7 @@ cook_time: "10 min"
 total_time: "25 min"
 rating: "5"
 image: "assets/081_green-goddess-pasta-salad.jpg"
+added_date: "2026-07-25"
 ---
 Green Goddess pasta salad is a vibrant summer side inspired by the famous Green Goddess salad dressing made with masses of fresh harbs!
 

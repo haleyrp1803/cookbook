@@ -16,6 +16,7 @@ cook_time: "14 min"
 total_time: "29 min"
 rating: "4.83"
 image: "assets/027_cardamom-sugar-cookies.webp"
+added_date: "2026-07-25"
 ---
 Simple cardamom sugar cookies made special with a snowflake cookie stamp!
 

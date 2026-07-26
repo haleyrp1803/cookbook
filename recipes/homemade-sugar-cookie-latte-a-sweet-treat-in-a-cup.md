@@ -18,6 +18,7 @@ cook_time: "PT5M"
 total_time: "PT10M"
 rating: "5"
 image: "assets/homemade-sugar-cookie-latte-a-sweet-treat-in-a-cup.jpg"
+added_date: "2026-07-25"
 ---
 This sugar cookie latte is a delicious recipe to give you Christmas vibes in a cup, no matter what time of year it is. Just try it!
 

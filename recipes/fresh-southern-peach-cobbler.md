@@ -12,6 +12,7 @@ cook_time: "PT40M"
 total_time: "PT60M"
 rating: "4.8"
 image: "assets/fresh-southern-peach-cobbler.jpg"
+added_date: "2026-07-25"
 ---
 This peach cobbler recipe tops juicy fresh peach slices with an easy homemade buttery cobbler topping for a delicious dessert perfect for summer!
 

@@ -18,6 +18,7 @@ cook_time: "15 min"
 total_time: "23 min"
 rating: "5"
 image: "assets/067_california-sushi-bowls.jpg"
+added_date: "2026-07-25"
 ---
 California Sushi Bowls are so easy to make & taste amazing. Enjoy tender crab, tangy sushi rice & fresh veggies in this light, flavorful dish.
 

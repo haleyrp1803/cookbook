@@ -14,6 +14,7 @@ const backButton = document.getElementById('backButton');
 let recipes = [];
 let currentRecipeId = null;
 let currentView = 'library';
+const recipeDetailCache = new Map();
 
 function unquote(value) {
   const trimmed = String(value || '').trim();
@@ -69,35 +70,16 @@ function parseRecipeMarkdown(text, filename) {
     }
   });
 
-  const title = String(metadata.title || '').trim();
-  const recipeCategory = String(metadata.category || '').trim();
-  if (!title) throw new Error(`${filename}: missing title`);
-  if (!recipeCategory) throw new Error(`${filename}: missing category`);
-
   let tags = metadata.tags || [];
   if (typeof tags === 'string') {
     tags = tags.split(';').map(value => value.trim()).filter(Boolean);
   }
 
-  const renderedHtml = markdownToHtml(body);
-  const plainBody = stripHtml(renderedHtml);
-  const stem = filename.replace(/\.md$/i, '');
-
   return {
-    id: stem,
+    ...metadata,
     filename,
-    title,
-    category: recipeCategory,
     tags,
-    source: String(metadata.source || ''),
-    servings: String(metadata.servings || ''),
-    prep_time: String(metadata.prep_time || ''),
-    cook_time: String(metadata.cook_time || ''),
-    total_time: String(metadata.total_time || ''),
-    rating: String(metadata.rating || ''),
-    image: String(metadata.image || ''),
-    html: renderedHtml,
-    search: [title, recipeCategory, tags.join(' '), plainBody].join(' ').toLowerCase()
+    html: markdownToHtml(body)
   };
 }
 
@@ -180,46 +162,26 @@ function inlineMarkdown(value) {
   return text;
 }
 
-function stripHtml(value) {
-  const temporary = document.createElement('div');
-  temporary.innerHTML = value;
-  return temporary.textContent || temporary.innerText || '';
-}
-
 async function loadRecipes() {
   try {
-    const manifestResponse = await fetch('recipes/recipe-index.json', { cache: 'no-cache' });
-    if (!manifestResponse.ok) {
-      throw new Error(`Could not load recipe index (${manifestResponse.status})`);
+    const response = await fetch('recipes/recipe-index.json', { cache: 'no-cache' });
+    if (!response.ok) {
+      throw new Error(`Could not load recipe index (${response.status})`);
     }
 
-    const filenames = await manifestResponse.json();
-    if (!Array.isArray(filenames)) {
-      throw new Error('Recipe index is not a JSON array.');
+    const payload = await response.json();
+    if (!payload || !Array.isArray(payload.recipes)) {
+      throw new Error('Recipe index is missing its recipes array.');
     }
 
-    const results = await Promise.allSettled(
-      filenames.map(async filename => {
-        const response = await fetch(`recipes/${encodeURIComponent(filename)}`, { cache: 'no-cache' });
-        if (!response.ok) {
-          throw new Error(`${filename}: HTTP ${response.status}`);
-        }
-        return parseRecipeMarkdown(await response.text(), filename);
-      })
-    );
-
-    const failures = results.filter(result => result.status === 'rejected');
-    recipes = results
-      .filter(result => result.status === 'fulfilled')
-      .map(result => result.value)
-      .sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
+    recipes = payload.recipes.map(recipe => ({
+      ...recipe,
+      tags: Array.isArray(recipe.tags) ? recipe.tags : [],
+      search_text: String(recipe.search_text || '').toLowerCase()
+    }));
 
     if (!recipes.length) {
-      throw new Error('No recipes could be loaded.');
-    }
-
-    if (failures.length) {
-      console.error('Some recipes failed to load:', failures.map(result => result.reason));
+      throw new Error('The recipe index contains no recipes.');
     }
 
     populateFilters();
@@ -228,10 +190,6 @@ async function loadRecipes() {
     tag.disabled = false;
     renderLists();
     showLibrary(false);
-
-    if (failures.length) {
-      libraryCount.textContent += ` · ${failures.length} file${failures.length === 1 ? '' : 's'} failed to load`;
-    }
   } catch (error) {
     console.error(error);
     libraryCount.textContent = 'Recipe collection unavailable';
@@ -239,7 +197,7 @@ async function loadRecipes() {
       <div class="load-error">
         <h2>The recipes could not be loaded.</h2>
         <p>${escapeHtml(error.message)}</p>
-        <p>Confirm that <code>recipes/recipe-index.json</code> and the Markdown files were pushed to GitHub Pages.</p>
+        <p>Confirm that <code>recipes/recipe-index.json</code> was generated and pushed to GitHub Pages.</p>
       </div>`;
   }
 }
@@ -275,7 +233,7 @@ function filteredRecipes() {
   const selectedTag = tag.value;
 
   return recipes.filter(recipe =>
-    (!query || recipe.search.includes(query)) &&
+    (!query || recipe.search_text.includes(query)) &&
     (!selectedCategory || recipe.category === selectedCategory) &&
     (!selectedTag || recipe.tags.includes(selectedTag))
   );
@@ -283,7 +241,7 @@ function filteredRecipes() {
 
 function cardMarkup(recipe) {
   return `
-    ${recipe.image ? `<img src="${escapeAttr(recipe.image)}" alt="">` : ''}
+    ${recipe.image ? `<img src="${escapeAttr(recipe.image)}" alt="" loading="lazy" decoding="async">` : ''}
     <div class="card-body">
       <h3>${escapeHtml(recipe.title)}</h3>
       <div class="meta">${escapeHtml(recipe.category)}${recipe.total_time ? ` · ${escapeHtml(recipe.total_time)}` : ''}</div>
@@ -333,7 +291,6 @@ function showLibrary(shouldScroll = true) {
   if (shouldScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-
 function pinRecipeSidebar() {
   const sidebar = reader.querySelector('.recipe-sidebar');
   if (!sidebar || window.innerWidth <= 850) return;
@@ -355,42 +312,92 @@ function refreshPinnedSidebar() {
   requestAnimationFrame(pinRecipeSidebar);
 }
 
-function openRecipe(recipe) {
+async function fetchRecipeDetails(recipe) {
+  if (recipeDetailCache.has(recipe.id)) {
+    return recipeDetailCache.get(recipe.id);
+  }
+  const response = await fetch(`recipes/${encodeURIComponent(recipe.filename)}`, { cache: 'no-cache' });
+  if (!response.ok) {
+    throw new Error(`${recipe.filename}: HTTP ${response.status}`);
+  }
+  const parsed = parseRecipeMarkdown(await response.text(), recipe.filename);
+  const details = {
+    ...recipe,
+    ...parsed,
+    id: recipe.id,
+    filename: recipe.filename,
+    title: parsed.title || recipe.title,
+    category: parsed.category || recipe.category,
+    tags: parsed.tags.length ? parsed.tags : recipe.tags,
+    image: parsed.image || recipe.image,
+    servings: recipe.servings || String(parsed.servings || ''),
+    prep_time: recipe.prep_time || String(parsed.prep_time || ''),
+    cook_time: recipe.cook_time || String(parsed.cook_time || ''),
+    total_time: recipe.total_time || String(parsed.total_time || ''),
+    rating: recipe.rating || String(parsed.rating || ''),
+    source: String(parsed.source || '')
+  };
+  recipeDetailCache.set(recipe.id, details);
+  return details;
+}
+
+function renderRecipe(details) {
+  reader.innerHTML = `
+    <div class="recipe-header">
+      <div class="category">${escapeHtml(details.category)}</div>
+      <h1 class="recipe-title">${escapeHtml(details.title)}</h1>
+    </div>
+    <div class="recipe-layout">
+      <aside class="recipe-sidebar">
+        ${details.image ? `<img class="recipe-image" src="${escapeAttr(details.image)}" alt="${escapeHtml(details.title)}" decoding="async">` : ''}
+        <section class="glance-card" aria-label="Recipe at a glance">
+          <h2>At a Glance</h2>
+          <dl class="glance-list">
+            ${glanceRow('Servings', details.servings)}
+            ${glanceRow('Prep', details.prep_time)}
+            ${glanceRow('Cook', details.cook_time)}
+            ${glanceRow('Total', details.total_time)}
+            ${glanceRow('Source rating', details.rating)}
+            ${glanceRow('Category', details.category)}
+          </dl>
+        </section>
+        ${details.tags.length ? `<div class="tag-wrap">${details.tags.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
+      </aside>
+      <div>
+        <article class="recipe-body">${details.html}</article>
+        ${details.source ? `<div class="source"><strong>Original recipe:</strong> <a href="${escapeAttr(details.source)}" target="_blank" rel="noopener">${escapeHtml(details.source)}</a></div>` : ''}
+      </div>
+    </div>`;
+
+  requestAnimationFrame(() => requestAnimationFrame(pinRecipeSidebar));
+}
+
+async function openRecipe(recipe) {
   currentView = 'reader';
   currentRecipeId = recipe.id;
   libraryView.hidden = true;
   readerView.hidden = false;
-
   reader.innerHTML = `
-    <div class="recipe-header">
-      <div class="category">${escapeHtml(recipe.category)}</div>
-      <h1 class="recipe-title">${escapeHtml(recipe.title)}</h1>
-    </div>
-    <div class="recipe-layout">
-      <aside class="recipe-sidebar">
-        ${recipe.image ? `<img class="recipe-image" src="${escapeAttr(recipe.image)}" alt="${escapeHtml(recipe.title)}">` : ''}
-        <section class="glance-card" aria-label="Recipe at a glance">
-          <h2>At a Glance</h2>
-          <dl class="glance-list">
-            ${glanceRow('Servings', recipe.servings)}
-            ${glanceRow('Prep', recipe.prep_time)}
-            ${glanceRow('Cook', recipe.cook_time)}
-            ${glanceRow('Total', recipe.total_time)}
-            ${glanceRow('Rating', recipe.rating)}
-            ${glanceRow('Category', recipe.category)}
-          </dl>
-        </section>
-        ${recipe.tags.length ? `<div class="tag-wrap">${recipe.tags.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
-      </aside>
-      <div>
-        <article class="recipe-body">${recipe.html}</article>
-        ${recipe.source ? `<div class="source"><strong>Original recipe:</strong> <a href="${escapeAttr(recipe.source)}" target="_blank" rel="noopener">${escapeHtml(recipe.source)}</a></div>` : ''}
-      </div>
+    <div class="recipe-loading" role="status" aria-live="polite">
+      <p>Loading ${escapeHtml(recipe.title)}…</p>
     </div>`;
-
   renderLists();
   window.scrollTo({ top: 0, behavior: 'auto' });
-  requestAnimationFrame(() => requestAnimationFrame(pinRecipeSidebar));
+
+  try {
+    const details = await fetchRecipeDetails(recipe);
+    if (currentRecipeId !== recipe.id || currentView !== 'reader') return;
+    renderRecipe(details);
+  } catch (error) {
+    console.error(error);
+    if (currentRecipeId !== recipe.id || currentView !== 'reader') return;
+    reader.innerHTML = `
+      <div class="load-error" role="alert">
+        <h1>${escapeHtml(recipe.title)}</h1>
+        <p>This recipe could not be loaded.</p>
+        <p>${escapeHtml(error.message)}</p>
+      </div>`;
+  }
 }
 
 function escapeHtml(value = '') {

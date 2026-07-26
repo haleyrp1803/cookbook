@@ -5,7 +5,6 @@ tags:
   - "cookies"
   - "vegetarian"
   - "year-round"
-  - "cookies and other desserts"
 source: "https://inbloombakery.com/chai-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "22, 22 cookies"
 prep_time: "30 min"

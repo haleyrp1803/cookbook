@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "asian"
-  - "salads"
 source: "https://eatwithclarity.com/asian-edamame-crunch-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "20 min"

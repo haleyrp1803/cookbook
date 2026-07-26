@@ -10,7 +10,6 @@ tags:
   - "american"
   - "mexican"
   - "tex-mex"
-  - "sandwiches, quesadillas, and sliders"
 source: "https://www.thediaryofarealhousewife.com/black-bean-and-cheese-quesadillas/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 servings"
 prep_time: "5 min"

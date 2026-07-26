@@ -7,7 +7,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "american"
-  - "cookies and other desserts"
 source: "https://cookiesandcups.com/salted-honey-pistachio-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "36, 36 cookies"
 prep_time: "30 min"

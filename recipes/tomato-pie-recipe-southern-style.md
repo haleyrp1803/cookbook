@@ -7,7 +7,6 @@ tags:
   - "tomatoes"
   - "year-round"
   - "american"
-  - "pies, casseroles, and bakes"
 source: "https://houseofnasheats.com/southern-tomato-pie/?utm_source=Pinterest&utm_medium=organic"
 servings: "10, 10 servings"
 prep_time: "20 min"

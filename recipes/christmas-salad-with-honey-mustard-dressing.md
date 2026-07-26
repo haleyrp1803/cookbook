@@ -10,7 +10,6 @@ tags:
   - "winter"
   - "under 1 hour"
   - "american"
-  - "salads"
 source: "https://www.halfbakedharvest.com/christmas-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "8"
 prep_time: "20 min"

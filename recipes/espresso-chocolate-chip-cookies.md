@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "year-round"
   - "american"
-  - "cookies and other desserts"
 source: "https://cambreabakes.com/espresso-chocolate-chip-cookies-recipe/?utm_source=Pinterest&utm_medium=organic"
 servings: "23, 23 cookies"
 prep_time: "170 min"

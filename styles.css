@@ -75,12 +75,13 @@ button { color:inherit; }
 
 .controls {
   display:grid;
-  grid-template-columns:minmax(230px,1.6fr) minmax(150px,.8fr) minmax(150px,.8fr);
+  grid-template-columns:minmax(220px,1.45fr) repeat(3,minmax(140px,.72fr)) auto;
   gap:9px;
   align-items:center;
 }
 .controls input,
-.controls select {
+.controls select,
+.clear-filters {
   width:100%;
   min-width:0;
   padding:9px 11px;
@@ -90,7 +91,15 @@ button { color:inherit; }
   color:var(--ink);
 }
 .controls input:focus,
-.controls select:focus { outline:3px solid rgba(184,151,79,.48); outline-offset:1px; }
+.controls select:focus,
+.clear-filters:focus-visible { outline:3px solid rgba(184,151,79,.48); outline-offset:1px; }
+.clear-filters {
+  white-space:nowrap;
+  cursor:pointer;
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+}
+.clear-filters:hover { border-color:var(--gold); }
 
 .library-view {
   max-width:1540px;

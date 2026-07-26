@@ -2,10 +2,9 @@
 title: "Apple Ginger Fizz For Fall"
 category: "Uncategorized"
 tags:
-  - "easy mocktail"
+  - "mocktail"
   - "fall mocktail"
-  - "['american']"
-  - "uncategorized"
+  - "american"
 source: "https://mindfulmocktail.com/fall-mocktails-apple-ginger/"
 servings: "['1']"
 prep_time: "PT5M"

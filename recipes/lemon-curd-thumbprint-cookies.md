@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "year-round"
   - "30 minutes or less"
-  - "cookies and other desserts"
 source: "https://pastryandbeyond.com/ginger-thumbprint-cookies-lemon-curd/?utm_source=Pinterest&utm_medium=organic"
 servings: "22, 22 cookies"
 prep_time: "15 min"

@@ -9,8 +9,6 @@ tags:
   - "vanilla flavoured coffee"
   - "vanilla flavoured latte"
   - "vanilla latte"
-  - "['worldwide']"
-  - "uncategorized"
   - "beans"
 source: "https://www.littlesugarsnaps.com/vanilla-bean-latte/"
 servings: "['1']"

@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "italian"
-  - "cakes, quick breads, and muffins"
 source: "https://anitalianinmykitchen.com/lemon-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 slices"
 prep_time: "10 min"

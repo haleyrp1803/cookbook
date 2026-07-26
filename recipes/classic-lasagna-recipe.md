@@ -2,10 +2,9 @@
 title: "Classic Lasagna Recipe"
 category: "Pies, Casseroles, and Bakes"
 tags:
-  - "contains sausage"
+  - "sausage"
   - "year-round"
   - "italian"
-  - "pies, casseroles, and bakes"
 source: "https://iwashyoudry.com/classic-lasagna-recipe/?utm_source=Pinterest&utm_medium=organic"
 servings: "12"
 prep_time: "15 min"

@@ -8,7 +8,6 @@ tags:
   - "tomatoes"
   - "autumn"
   - "american"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://madaboutfood.co/butternut-squash-pasta-sauce/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "10 min"

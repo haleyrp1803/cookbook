@@ -22,6 +22,17 @@
 
       <label class="sr-only" for="tag">Filter by tag</label>
       <select id="tag" disabled><option value="">All tags</option></select>
+
+      <label class="sr-only" for="sort">Sort recipes</label>
+      <select id="sort" disabled>
+        <option value="title-asc">Title: A–Z</option>
+        <option value="title-desc">Title: Z–A</option>
+        <option value="recent">Recently added</option>
+        <option value="time">Shortest total time</option>
+        <option value="rating">Highest source rating</option>
+      </select>
+
+      <button class="clear-filters" id="clearFilters" type="button" hidden>Clear filters</button>
     </section>
   </header>
 

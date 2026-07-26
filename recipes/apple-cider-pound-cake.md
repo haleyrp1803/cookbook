@@ -8,7 +8,6 @@ tags:
   - "apple"
   - "autumn"
   - "american"
-  - "cakes, quick breads, and muffins"
   - "haley's favorite"
 source: "https://4sonrus.com/apple-cider-pound-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "12"

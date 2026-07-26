@@ -9,7 +9,6 @@ tags:
   - "edamame"
   - "year-round"
   - "15 minutes or less"
-  - "salads"
 source: "https://cookingforpeanuts.com/salad-with-asian-dressing/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 people"
 prep_time: "15 min"

@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "pumpkin"
   - "autumn"
-  - "cookies and other desserts"
 source: "https://theamazingfood.com/perfect-pumpkin-spice-cookies-26141/?utm_source=Pinterest&utm_medium=organic"
 servings: "4"
 prep_time: "15 min"

@@ -8,7 +8,6 @@ tags:
   - "broccoli"
   - "cauliflower"
   - "year-round"
-  - "soups, stews, and chili"
 source: "https://upbeetanisha.com/creamy-green-goddess-broccoli-soup/?utm_source=Pinterest&utm_medium=organic"
 servings: ""
 prep_time: ""

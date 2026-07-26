@@ -8,7 +8,6 @@ tags:
   - "tomatoes"
   - "year-round"
   - "under 1 hour"
-  - "salads"
 source: "https://wholeandheavenlyoven.com/2023/01/12/mediterranean-lentil-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "30 min"

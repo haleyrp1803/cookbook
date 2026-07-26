@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "salads"
 source: "https://gimmedelicious.com/crispy-potato-salad/#wprm-recipe-container-30205"
 servings: "6, 6 people"
 prep_time: "10 min"

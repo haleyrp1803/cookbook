@@ -9,7 +9,6 @@ tags:
   - "30 minutes or less"
   - "mediterranean"
   - "middle eastern"
-  - "breakfast and smoothie bowls"
 source: "https://downshiftology.com/recipes/shakshuka/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "10 min"

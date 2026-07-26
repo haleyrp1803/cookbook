@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "15 minutes or less"
   - "asian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://eatwithclarity.com/garlic-sesame-noodles/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 servings"
 prep_time: "5 min"

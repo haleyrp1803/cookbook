@@ -9,7 +9,6 @@ tags:
   - "winter"
   - "15 minutes or less"
   - "american"
-  - "breakfast and smoothie bowls"
 source: "https://themodernproper.com/how-to-make-a-smoothie-bowl"
 servings: "1"
 prep_time: "10 min"

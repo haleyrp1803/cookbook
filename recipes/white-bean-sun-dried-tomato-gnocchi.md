@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://lifecurrentsblog.com/white-bean-sun-dried-tomato-gnocchi/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 servings"
 prep_time: "10 min"

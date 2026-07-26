@@ -6,8 +6,6 @@ tags:
   - "flavoured latte"
   - "iced pistachio latte"
   - "pistachio latte"
-  - "['worldwide']"
-  - "uncategorized"
 source: "https://www.littlesugarsnaps.com/pistachio-coffee/"
 servings: "['1']"
 prep_time: "PT5M"

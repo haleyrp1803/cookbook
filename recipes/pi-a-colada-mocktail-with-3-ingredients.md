@@ -4,7 +4,6 @@ category: "Uncategorized"
 tags:
   - "non alcoholic pina colada"
   - "piña colada mocktail"
-  - "uncategorized"
 source: "https://mindfulmocktail.com/pina-colada-mocktail-recipe/"
 servings: "['1']"
 prep_time: "PT5M"

@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "indian"
-  - "curries"
 source: "https://vegancocotte.com/vegan-butter-bean-curry/?utm_source=Pinterest&utm_medium=organic&utm_campaign=grow-social-pro"
 servings: "4"
 prep_time: "10 min"

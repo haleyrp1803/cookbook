@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "american"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://www.keepingthepeas.com/hidden-veggie-pasta-sauce/?utm_source=Pinterest&utm_medium=organic"
 servings: "8"
 prep_time: "15 min"

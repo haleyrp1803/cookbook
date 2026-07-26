@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "year-round"
   - "american"
-  - "cakes, quick breads, and muffins"
 source: "https://www.simplyrecipes.com/recipes/banana_bread/"
 servings: "10, 1 loaf"
 prep_time: "10 min"

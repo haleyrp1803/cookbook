@@ -9,7 +9,6 @@ tags:
   - "autumn"
   - "under 1 hour"
   - "italian"
-  - "rice, grain dishes, and bowls"
 source: "https://www.platingsandpairings.com/pumpkin-risotto-with-goat-cheese-dried-cranberries/?utm_source=Pinterest&utm_medium=organic"
 servings: "4"
 prep_time: "5 min"

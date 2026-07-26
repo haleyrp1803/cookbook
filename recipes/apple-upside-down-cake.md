@@ -7,7 +7,6 @@ tags:
   - "eggs"
   - "apple"
   - "year-round"
-  - "cakes, quick breads, and muffins"
 source: "https://www.meatydelights.net/apple-upside-down-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: ""
 prep_time: "20 min"

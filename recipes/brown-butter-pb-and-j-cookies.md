@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "year-round"
   - "american"
-  - "cookies and other desserts"
 source: "https://honeyedsundays.com/2022/03/22/brown-butter-pb-j-cookies/"
 servings: "10"
 prep_time: "15 min"

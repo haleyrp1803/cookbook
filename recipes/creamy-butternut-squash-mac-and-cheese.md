@@ -7,7 +7,6 @@ tags:
   - "squash"
   - "autumn"
   - "italian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://www.currytrail.in/butternut-squash-mac-and-cheese/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "10 min"

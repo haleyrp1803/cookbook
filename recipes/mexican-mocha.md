@@ -8,8 +8,6 @@ tags:
   - "oaxaca latte"
   - "oaxaca mocha"
   - "spicy mocha"
-  - "['worldwide']"
-  - "uncategorized"
 source: "https://www.littlesugarsnaps.com/mexican-mocha/"
 servings: "['2']"
 prep_time: ""

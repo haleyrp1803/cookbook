@@ -6,7 +6,6 @@ tags:
   - "eggplant"
   - "year-round"
   - "30 minutes or less"
-  - "vegetables and side dishes"
 source: "https://succulentrecipes.com/mediterranean-roasted-eggplant/"
 servings: "4, 4 servings"
 prep_time: "10 min"

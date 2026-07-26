@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "eggs"
   - "year-round"
-  - "cakes, quick breads, and muffins"
 source: "https://www.rhubarbandlavender.com/orange-cardamom-fig-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 servings"
 prep_time: ""

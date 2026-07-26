@@ -8,7 +8,6 @@ tags:
   - "tomatoes"
   - "summer"
   - "american"
-  - "salads"
 source: "https://www.spicesinmydna.com/summer-grain-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 -6"
 prep_time: "35 min"

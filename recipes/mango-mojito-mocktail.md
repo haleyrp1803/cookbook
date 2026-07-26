@@ -2,11 +2,10 @@
 title: "Mango Mojito Mocktail"
 category: "Uncategorized"
 tags:
-  - "easy mocktail"
+  - "mocktail"
   - "mango mocktail"
   - "virgin mojito"
-  - "['mediterranean']"
-  - "uncategorized"
+  - "mediterranean"
 source: "https://mindfulmocktail.com/mango-mocktail/"
 servings: "['1']"
 prep_time: "PT5M"

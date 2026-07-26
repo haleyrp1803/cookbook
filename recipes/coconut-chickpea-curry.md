@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "indian"
-  - "curries"
 source: "https://realandvibrant.com/coconut-chickpea-curry/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "5 min"

@@ -7,7 +7,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "american"
-  - "cookies and other desserts"
 source: "https://www.crunchycreamysweet.com/coconut-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "12, 12 cookies"
 prep_time: "15 min"

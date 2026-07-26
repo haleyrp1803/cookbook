@@ -7,7 +7,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "cookies and other desserts"
 source: "https://stephaniessweets.com/raspberry-white-chocolate-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "15, 15 large cookies"
 prep_time: "15 min"

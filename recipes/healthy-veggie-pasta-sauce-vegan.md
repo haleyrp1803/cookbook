@@ -10,7 +10,6 @@ tags:
   - "american"
   - "gluten-free"
   - "vegan"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://goodfoodbaddie.com/healthy-veggie-pasta-sauce-vegan/?utm_source=Pinterest&utm_medium=organic"
 servings: "6"
 prep_time: "10 min"

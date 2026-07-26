@@ -6,6 +6,8 @@ const reader = document.getElementById('reader');
 const search = document.getElementById('search');
 const category = document.getElementById('category');
 const tag = document.getElementById('tag');
+const sort = document.getElementById('sort');
+const clearFilters = document.getElementById('clearFilters');
 const libraryCount = document.getElementById('libraryCount');
 const railCount = document.getElementById('railCount');
 const homeButton = document.getElementById('homeButton');
@@ -199,6 +201,7 @@ async function loadRecipes() {
     search.disabled = false;
     category.disabled = false;
     tag.disabled = false;
+    sort.disabled = false;
     renderLists();
     initializeRoute();
   } catch (error) {
@@ -238,16 +241,71 @@ function glanceRow(label, value) {
     : '';
 }
 
+function numericRating(value) {
+  const match = String(value || '').match(/\d+(?:\.\d+)?/);
+  return match ? Number(match[0]) : null;
+}
+
+function sortedRecipes(items) {
+  const result = [...items];
+  const byTitle = (a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
+
+  switch (sort.value) {
+    case 'title-desc':
+      return result.sort((a, b) => byTitle(b, a));
+    case 'recent':
+      return result.sort((a, b) => {
+        const dateCompare = String(b.added_date || '').localeCompare(String(a.added_date || ''));
+        return dateCompare || byTitle(a, b);
+      });
+    case 'time':
+      return result.sort((a, b) => {
+        const aTime = Number.isFinite(a.total_minutes) ? a.total_minutes : Number.POSITIVE_INFINITY;
+        const bTime = Number.isFinite(b.total_minutes) ? b.total_minutes : Number.POSITIVE_INFINITY;
+        return aTime - bTime || byTitle(a, b);
+      });
+    case 'rating':
+      return result.sort((a, b) => {
+        const aRating = numericRating(a.rating);
+        const bRating = numericRating(b.rating);
+        if (aRating === null && bRating === null) return byTitle(a, b);
+        if (aRating === null) return 1;
+        if (bRating === null) return -1;
+        return bRating - aRating || byTitle(a, b);
+      });
+    default:
+      return result.sort(byTitle);
+  }
+}
+
 function filteredRecipes() {
   const query = search.value.trim().toLowerCase();
   const selectedCategory = category.value;
   const selectedTag = tag.value;
 
-  return recipes.filter(recipe =>
+  const filtered = recipes.filter(recipe =>
     (!query || recipe.search_text.includes(query)) &&
     (!selectedCategory || recipe.category === selectedCategory) &&
     (!selectedTag || recipe.tags.includes(selectedTag))
   );
+
+  return sortedRecipes(filtered);
+}
+
+function filtersAreActive() {
+  return Boolean(search.value.trim() || category.value || tag.value);
+}
+
+function updateClearFiltersButton() {
+  clearFilters.hidden = !filtersAreActive();
+}
+
+function clearAllFilters() {
+  search.value = '';
+  category.value = '';
+  tag.value = '';
+  renderLists();
+  search.focus();
 }
 
 function cardMarkup(recipe) {
@@ -271,7 +329,10 @@ function makeCard(recipe) {
 
 function renderLists() {
   const filtered = filteredRecipes();
-  const countText = `${filtered.length} of ${recipes.length} recipes`;
+  const countText = filtered.length === recipes.length
+    ? `Showing ${recipes.length} recipes`
+    : `Showing ${filtered.length} of ${recipes.length} recipes`;
+  updateClearFiltersButton();
   libraryCount.textContent = countText;
   railCount.textContent = countText;
   libraryGrid.innerHTML = '';
@@ -553,7 +614,8 @@ function handleFilterChange() {
   }
 }
 
-[search, category, tag].forEach(control => control.addEventListener('input', handleFilterChange));
+[search, category, tag, sort].forEach(control => control.addEventListener('input', handleFilterChange));
+clearFilters.addEventListener('click', clearAllFilters);
 homeButton.addEventListener('click', () => navigateToLibrary());
 backButton.addEventListener('click', () => navigateToLibrary());
 window.addEventListener('resize', refreshPinnedSidebar);

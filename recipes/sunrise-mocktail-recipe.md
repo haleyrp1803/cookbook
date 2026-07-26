@@ -3,7 +3,6 @@ title: "Sunrise Mocktail Recipe"
 category: "Uncategorized"
 tags:
   - "sunrise mocktail"
-  - "uncategorized"
 source: "https://mindfulmocktail.com/sunrise-mocktail-recipe/"
 servings: "['1']"
 prep_time: "PT3M"

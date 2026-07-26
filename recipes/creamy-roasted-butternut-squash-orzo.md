@@ -8,7 +8,6 @@ tags:
   - "squash"
   - "autumn"
   - "british/italian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://vikalinka.com/orzo-pasta-roasted-butternut-squash/?utm_source=Pinterest&utm_medium=organic"
 servings: "6"
 prep_time: "15 min"

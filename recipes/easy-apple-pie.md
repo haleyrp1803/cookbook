@@ -2,11 +2,8 @@
 title: "Easy Apple Pie"
 category: "Cookies and Other Desserts"
 tags:
-  - "easy apple pie"
   - "homemade apple pie"
-  - "how to make apple pie"
-  - "['american']"
-  - "cookies and other desserts"
+  - "american"
   - "eggs"
 source: "https://littlespoonfarm.com/apple-pie-recipe/#recipe"
 servings: "['8']"

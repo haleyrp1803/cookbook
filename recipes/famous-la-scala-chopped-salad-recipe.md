@@ -9,7 +9,6 @@ tags:
   - "30 minutes or less"
   - "american"
   - "italian"
-  - "salads"
 source: "https://whatmollymade.com/la-scala-chopped-salad/?utm_source=Pinterest&utm_medium=organic#wprm-recipe-container-44272"
 servings: "6, 6 servings"
 prep_time: "20 min"

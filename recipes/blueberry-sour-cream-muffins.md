@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "cakes, quick breads, and muffins"
 source: "https://farmettekitchen.com/blueberry-sour-cream-muffins/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 muffins"
 prep_time: "5 min"

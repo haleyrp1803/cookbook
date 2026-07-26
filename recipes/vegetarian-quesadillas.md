@@ -10,7 +10,6 @@ tags:
   - "american"
   - "mexican"
   - "tex-mex"
-  - "sandwiches, quesadillas, and sliders"
 source: "https://erhardtseat.com/vegetarian-quesadillas/"
 servings: "4, 4 Serving"
 prep_time: "10 min"

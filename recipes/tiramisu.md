@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "15 minutes or less"
   - "italian"
-  - "cookies and other desserts"
 source: "https://tastesbetterfromscratch.com/easy-tiramisu/"
 servings: "9"
 prep_time: "10 min"

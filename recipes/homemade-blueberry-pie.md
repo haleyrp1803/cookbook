@@ -4,7 +4,6 @@ category: "Cookies and Other Desserts"
 tags:
   - "blueberry pie"
   - "american"
-  - "cookies and other desserts"
   - "eggs"
 source: "https://sallysbakingaddiction.com/best-blueberry-pie/#tasty-recipes-70338"
 servings: "['8', '8-10 servings']"

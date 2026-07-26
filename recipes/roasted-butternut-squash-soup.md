@@ -7,7 +7,6 @@ tags:
   - "squash"
   - "autumn"
   - "american"
-  - "soups, stews, and chili"
 source: "https://www.aheadofthyme.com/2015/12/roasted-butternut-squash-soup/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 servings (approx. 10 cups)"
 prep_time: "15 min"

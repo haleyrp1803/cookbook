@@ -5,7 +5,6 @@ tags:
   - "lemon poppy seed pancakes"
   - "greek yogurt pancakes"
   - "american"
-  - "breakfast and smoothie bowls"
   - "eggs"
 source: "https://sallysbakingaddiction.com/greek-yogurt-lemon-poppy-seed-pancakes/#tasty-recipes-70428"
 servings: "['12', '12-14 pancakes']"

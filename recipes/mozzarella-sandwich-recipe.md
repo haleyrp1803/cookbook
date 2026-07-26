@@ -7,7 +7,6 @@ tags:
   - "year-round"
   - "15 minutes or less"
   - "italian"
-  - "sandwiches, quesadillas, and sliders"
 source: "https://feelgoodfoodie.net/recipe/grilled-mozzarella-sandwich-walnut-pesto/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 servings"
 prep_time: "10 min"

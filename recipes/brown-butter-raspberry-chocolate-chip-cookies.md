@@ -8,7 +8,6 @@ tags:
   - "summer"
   - "30 minutes or less"
   - "american"
-  - "cookies and other desserts"
 source: "https://www.halfbakedharvest.com/raspberry-chocolate-chip-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "24, 24 cookies"
 prep_time: "15 min"

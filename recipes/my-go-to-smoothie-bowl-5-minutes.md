@@ -9,7 +9,6 @@ tags:
   - "15 minutes or less"
   - "gluten-free"
   - "vegan"
-  - "breakfast and smoothie bowls"
 source: "https://minimalistbaker.com/favorite-smoothie-bowl-5-minutes/"
 servings: "1, 1 (smoothie bowl)"
 prep_time: "5 min"

@@ -7,8 +7,6 @@ tags:
   - "vegetarian"
   - "year-round"
   - "15 minutes or less"
-  - "general"
-  - "breakfast and smoothie bowls"
 source: "https://www.budgetbytes.com/how-to-make-smoothie-bowls/"
 servings: "2, 2 bowls (about 1 cup of smoothie + ¼ cup toppings each)"
 prep_time: "10 min"

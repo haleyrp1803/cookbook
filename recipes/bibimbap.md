@@ -10,7 +10,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "korean"
-  - "rice, grain dishes, and bowls"
 source: "https://www.loveandlemons.com/bibimbap-recipe/?utm_source=Pinterest&utm_medium=organic"
 servings: "2"
 prep_time: "30 min"

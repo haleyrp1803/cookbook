@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "salads"
 source: "https://www.loveandlemons.com/coleslaw-recipe/?utm_source=Pinterest&utm_medium=organic"
 servings: "6"
 prep_time: "30 min"

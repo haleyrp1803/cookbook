@@ -6,7 +6,6 @@ tags:
   - "vegetarian"
   - "apple"
   - "year-round"
-  - "cookies and other desserts"
 source: "https://sturbridgebakery.com/apple-snickerdoodles/?utm_source=Pinterest&utm_medium=organic"
 servings: ""
 prep_time: "25 min"

@@ -7,7 +7,6 @@ tags:
   - "vegetarian"
   - "tomatoes"
   - "summer"
-  - "salads"
 source: "https://www.loveandlemons.com/italian-pasta-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 to 12"
 prep_time: ""

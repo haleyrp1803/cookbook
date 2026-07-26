@@ -2,10 +2,9 @@
 title: "The Best Shirley Temple Mocktail"
 category: "Uncategorized"
 tags:
-  - "easy mocktail"
+  - "mocktail"
   - "mocktails for kids"
-  - "['american']"
-  - "uncategorized"
+  - "american"
 source: "https://mindfulmocktail.com/shirley-temple-mocktail/"
 servings: "['1']"
 prep_time: "PT3M"

@@ -81,3 +81,17 @@ GitHub Pages publishes from the `main` branch and repository root. The root-leve
 ## Recipe URLs and navigation
 
 Each recipe has a stable hash URL such as `#banana-bread`. Direct links and browser refreshes reopen that recipe. Browser Back and Forward move through recipe and library history, and returning to the library restores the previous grid scroll position. Previous/Next controls follow the currently filtered recipe set.
+
+
+## Library sorting and tag maintenance
+
+The library can be sorted by title, date added, total time, or source rating. Search, category, tag, and sort selections remain active while a recipe is open.
+
+Recipe tags use a conservative normalized vocabulary. To normalize frontmatter tags after manual imports, run:
+
+```powershell
+py .\scripts\normalize_recipe_tags.py
+py .\scripts\build_recipe_index.py
+```
+
+The scraper applies the same normalization rules to newly imported recipes. Review new tags as part of the normal import audit; dietary tags should not be inferred unless the source explicitly supports them.

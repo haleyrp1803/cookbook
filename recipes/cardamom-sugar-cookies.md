@@ -8,7 +8,6 @@ tags:
   - "winter"
   - "30 minutes or less"
   - "american"
-  - "cookies and other desserts"
 source: "https://theviewfromgreatisland.com/cardamom-sugar-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "1.5, 1.5 dozen"
 prep_time: "15 min"

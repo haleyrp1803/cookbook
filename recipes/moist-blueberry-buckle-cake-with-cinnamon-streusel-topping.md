@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "american"
-  - "cakes, quick breads, and muffins"
 source: "https://www.bakeandbacon.com/blueberry-buckle-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "12, 12 servings"
 prep_time: "15 min"

@@ -7,7 +7,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "american"
-  - "vegetables and side dishes"
 source: "https://www.platingsandpairings.com/roasted-brussels-sprouts-balsamic/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 servings"
 prep_time: "10 min"

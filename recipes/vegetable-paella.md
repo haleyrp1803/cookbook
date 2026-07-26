@@ -12,7 +12,6 @@ tags:
   - "tomatoes"
   - "year-round"
   - "american"
-  - "rice, grain dishes, and bowls"
 source: "https://thealmondeater.com/vegetable-paella/?utm_source=Pinterest&utm_medium=organic"
 servings: "6"
 prep_time: "15 min"

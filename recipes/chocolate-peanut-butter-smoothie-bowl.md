@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "15 minutes or less"
   - "american"
-  - "breakfast and smoothie bowls"
 source: "https://www.bakerita.com/chocolate-peanut-butter-smoothie-bowl/"
 servings: "1, 1 serving"
 prep_time: "5 min"

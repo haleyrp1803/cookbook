@@ -353,6 +353,57 @@ def parse_recipe(data: dict[str, Any], source_url: str, soup: BeautifulSoup) -> 
     )
 
 
+
+TAG_ALIASES = {
+    "gluten free": "gluten-free", "make ahead": "make-ahead", "main-dish": "main dish",
+    "one pan": "one-pan", "one pot": "one-pot", "slow cooker": "slow-cooker",
+    "low carb": "low-carb", "low sodium": "low-sodium", "dairy free": "dairy-free",
+    "dairy free main course": "dairy-free", "dairy-free latte": "dairy-free",
+    "dariy-free latte": "dairy-free", "contains chicken": "chicken",
+    "contains beef": "beef", "contains pork": "pork", "contains sausage": "sausage",
+    "contains seafood": "seafood", "american cuisine": "american",
+    "american (us) cuisine": "american", "cajun cuisine": "cajun",
+    "mediterranean cuisine": "mediterranean", "southern cuisine": "southern",
+    "soul food cuisine": "southern", "italian cuisine": "italian",
+    "european cuisine": "european", "chinese american": "chinese-american",
+    "weeknight meals": "weeknight", "fall": "autumn", "drink": "beverage",
+    "drinks": "beverage", "easy mockail": "mocktail", "easy mocktail": "mocktail",
+}
+TAG_DROP_PREFIXES = (
+    "contentid:", "displaytype:", "issyndicated:", "locale:", "shorttitle:",
+    "sponsored:", "subsection:", "totaltime:", "updated:", "filtertime:",
+    "collection:", "content-type:", "category:", "nutrition:", "occasion:",
+)
+TAG_DROP_EXACT = {
+    "uncategorized", "worldwide", "web", "general", "ingredient", "best",
+    "publisher-tested", "receta", "easy recipe", "international",
+}
+
+def normalize_tags(values, *, title="", category=""):
+    category_key = str(category or "").strip().casefold()
+    title_key = str(title or "").strip().casefold()
+    output = []
+    for raw in values or []:
+        raw_text = str(raw or "").strip().strip("[]'\\\"")
+        raw_key = re.sub(r"\\s+", " ", raw_text).strip(" ,;|").casefold()
+        if not raw_key or raw_key.startswith(TAG_DROP_PREFIXES) or raw_key == category_key:
+            continue
+        pieces = re.split(r"[,;|]", raw_text) if re.search(r"[,;|]", raw_text) else [raw_text]
+        for piece in pieces:
+            tag = re.sub(r"\\s+", " ", piece).strip(" []'\\\",;|").casefold()
+            if not tag or tag.startswith(TAG_DROP_PREFIXES):
+                continue
+            tag = TAG_ALIASES.get(tag, tag)
+            if tag in TAG_DROP_EXACT or tag == category_key or tag == title_key:
+                continue
+            if "recipe" in tag or tag.startswith(("how to ", "what is ")):
+                continue
+            if len(tag) > 40 or len(tag.split()) > 5:
+                continue
+            if tag not in output:
+                output.append(tag)
+    return output
+
 def infer_cookbook_category(recipe: Recipe) -> str:
     haystack = " ".join([
         recipe.title,
@@ -417,7 +468,7 @@ def infer_tags(recipe: Recipe, category: str, extra_tags: list[str]) -> list[str
     ]:
         if any(term in haystack for term in terms):
             raw.append(label)
-    return [x.casefold() for x in unique(raw)]
+    return normalize_tags(unique(raw), title=recipe.title, category=category)
 
 
 def infer_extension(response: requests.Response, image_url: str) -> str:

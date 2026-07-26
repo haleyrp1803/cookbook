@@ -2,10 +2,9 @@
 title: "Strawberry Basil Mocktail"
 category: "Uncategorized"
 tags:
-  - "drink"
+  - "beverage"
   - "strawberry"
-  - "['american']"
-  - "uncategorized"
+  - "american"
 source: "https://mindfulmocktail.com/strawberry-basil-mocktail/"
 servings: "['1']"
 prep_time: "PT5M"

@@ -11,7 +11,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "indian"
-  - "curries"
 source: "https://theyummybowl.com/chickpea-and-cauliflower-coconut-curry-vegan/?pp=1&utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 servings"
 prep_time: "5 min"

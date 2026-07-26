@@ -7,7 +7,6 @@ tags:
   - "tomatoes"
   - "year-round"
   - "30 minutes or less"
-  - "sandwiches, quesadillas, and sliders"
 source: "https://www.simplejoy.com/italian-pesto-sliders/"
 servings: "24, 24 sandwiches"
 prep_time: "10 min"

@@ -10,7 +10,6 @@ tags:
   - "american"
   - "fusion"
   - "japanese"
-  - "cookies and other desserts"
 source: "https://justinesnacks.com/pumpkin-miso-caramel-cookies/"
 servings: "7, 7 cookies"
 prep_time: "15 min"

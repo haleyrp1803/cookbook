@@ -2,9 +2,8 @@
 title: "Blackberry Fizz Mocktail"
 category: "Uncategorized"
 tags:
-  - "easy mocktail"
-  - "['american']"
-  - "uncategorized"
+  - "mocktail"
+  - "american"
 source: "https://mindfulmocktail.com/blackberry-mocktail-recipe/"
 servings: "['1']"
 prep_time: "PT5M"

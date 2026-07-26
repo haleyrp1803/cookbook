@@ -5,7 +5,6 @@ tags:
   - "salad"
   - "vegetarian"
   - "summer"
-  - "salads"
 source: "https://www.loveandlemons.com/mexican-street-corn-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "4"
 prep_time: ""

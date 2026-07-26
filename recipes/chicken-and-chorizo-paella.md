@@ -2,11 +2,9 @@
 title: "Chicken and Chorizo Paella"
 category: "Rice, Grain Dishes, and Bowls"
 tags:
-  - "chicken and chorizo paella"
   - "chorizo paella"
-  - "['spanish']"
-  - "rice, grain dishes, and bowls"
-  - "contains chicken"
+  - "spanish"
+  - "chicken"
   - "tomatoes"
 source: "https://cookingformysoul.com/chicken-chorizo-paella/#recipe"
 servings: "['6', '6 people']"

@@ -11,7 +11,6 @@ tags:
   - "under 1 hour"
   - "indian"
   - "indian inspired"
-  - "curries"
 source: "https://www.watchwhatueat.com/healthy-chickpea-tikka-masala/?utm_source=Pinterest&utm_medium=organic"
 servings: "4"
 prep_time: "15 min"

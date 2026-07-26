@@ -2,10 +2,9 @@
 title: "Halloween Mocktail (Batch or Single Serve)"
 category: "Uncategorized"
 tags:
-  - "drink"
+  - "beverage"
   - "halloween"
-  - "['american']"
-  - "uncategorized"
+  - "american"
 source: "https://mindfulmocktail.com/halloween-mocktail-recipe-coconut-spirit/"
 servings: "['6']"
 prep_time: "PT10M"

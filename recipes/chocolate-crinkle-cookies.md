@@ -7,7 +7,6 @@ tags:
   - "eggs"
   - "year-round"
   - "american"
-  - "cookies and other desserts"
 source: "https://preppykitchen.com/chocolate-crinkle-cookies/"
 servings: "48, 48 cookies"
 prep_time: "15 min"

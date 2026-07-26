@@ -10,7 +10,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "salads"
 source: "https://theviewfromgreatisland.com/green-goddess-pasta-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "10"
 prep_time: "15 min"

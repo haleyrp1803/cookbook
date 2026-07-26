@@ -2,10 +2,7 @@
 title: "Pumpkin Spice Latte"
 category: "Uncategorized"
 tags:
-  - "pumpkin spice latte"
-  - "pumpkin spice latte recipe"
-  - "['american']"
-  - "uncategorized"
+  - "american"
   - "squash"
 source: "https://downshiftology.com/recipes/pumpkin-spice-latte/"
 servings: "['2', '2 servings']"

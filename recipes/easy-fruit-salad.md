@@ -9,7 +9,6 @@ tags:
   - "summer"
   - "30 minutes or less"
   - "american"
-  - "salads"
 source: "https://www.loveandlemons.com/fruit-salad-recipe/"
 servings: "12"
 prep_time: "30 min"

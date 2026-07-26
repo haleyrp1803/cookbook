@@ -10,7 +10,6 @@ tags:
   - "broccoli"
   - "year-round"
   - "under 1 hour"
-  - "soups, stews, and chili"
 source: "https://melissarecipes.com/veggie-pot-pie-soup-comfort-in-a-bowl-without-the-crust/?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "15 min"

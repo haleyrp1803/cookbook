@@ -9,7 +9,6 @@ tags:
   - "summer"
   - "15 minutes or less"
   - "italian"
-  - "salads"
 source: "https://www.platingsandpairings.com/peach-caprese-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "4, 4 people"
 prep_time: "15 min"

@@ -12,7 +12,6 @@ tags:
   - "healthy"
   - "italian"
   - "mediterranean"
-  - "soups, stews, and chili"
 source: "https://www.bakerita.com/creamy-vegan-tomato-white-bean-stew/?utm_source=Pinterest&utm_medium=organic"
 servings: "2, 2 servings"
 prep_time: "5 min"

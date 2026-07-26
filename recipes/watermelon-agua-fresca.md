@@ -2,10 +2,9 @@
 title: "Watermelon Agua Fresca"
 category: "Uncategorized"
 tags:
-  - "easy mockail"
+  - "mocktail"
   - "watermelon drink"
-  - "['mexican']"
-  - "uncategorized"
+  - "mexican"
 source: "https://mindfulmocktail.com/watermelon-agua-fresca/"
 servings: "['4']"
 prep_time: "PT10M"

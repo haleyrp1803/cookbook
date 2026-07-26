@@ -2,9 +2,7 @@
 title: "Fresh Southern Peach Cobbler"
 category: "Cookies and Other Desserts"
 tags:
-  - "publisher-tested"
-  - "['southern']"
-  - "cookies and other desserts"
+  - "southern"
 source: "https://www.allrecipes.com/recipe/51535/fresh-southern-peach-cobbler/"
 servings: "['4', '1 (2-quart) cobbler']"
 prep_time: "PT20M"

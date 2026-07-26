@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "30 minutes or less"
   - "american"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://thishealthytable.com/blog/green-mac-and-cheese/"
 servings: "6"
 prep_time: "10 min"

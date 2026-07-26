@@ -2,8 +2,7 @@
 title: "Easy Blood Orange Mocktail"
 category: "Uncategorized"
 tags:
-  - "['american']"
-  - "uncategorized"
+  - "american"
 source: "https://mindfulmocktail.com/blood-orange-mocktail/"
 servings: "['1']"
 prep_time: "PT3M"

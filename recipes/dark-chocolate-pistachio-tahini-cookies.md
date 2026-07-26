@@ -7,7 +7,6 @@ tags:
   - "eggs"
   - "year-round"
   - "american"
-  - "cookies and other desserts"
 source: "https://infinetaste.com/dark-chocolate-pistachio-tahini-cookies/"
 servings: "22, 22 cookies"
 prep_time: "90 min"

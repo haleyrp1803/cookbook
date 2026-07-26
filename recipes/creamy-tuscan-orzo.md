@@ -11,7 +11,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "italian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://shortgirltallorder.com/vegan-tuscan-orzo?utm_source=Pinterest&utm_medium=organic"
 servings: "6, 6 servings"
 prep_time: "10 min"

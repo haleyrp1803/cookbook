@@ -2,9 +2,7 @@
 title: "Zero-Proof Blackberry Mojito"
 category: "Uncategorized"
 tags:
-  - "mojito recipes"
   - "blackberry"
-  - "uncategorized"
 source: "https://www.foodnetwork.com/recipes/food-network-kitchen/zero-proof-blackberry-mojito-13160608"
 servings: "1 zero-proof blackberry mojito"
 prep_time: ""

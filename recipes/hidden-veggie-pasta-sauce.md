@@ -9,7 +9,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "italian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://scarlatifamilykitchen.com/hidden-vegetable-pasta-sauce/?utm_source=Pinterest&utm_medium=organic"
 servings: "32, 32 servings"
 prep_time: "15 min"

@@ -8,7 +8,6 @@ tags:
   - "year-round"
   - "under 1 hour"
   - "mexican"
-  - "sandwiches, quesadillas, and sliders"
 source: "https://realhousemoms.com/sweet-potato-black-bean-quesadilla/?utm_source=Pinterest&utm_medium=organic"
 servings: "5, 5 quesadillas"
 prep_time: "10 min"

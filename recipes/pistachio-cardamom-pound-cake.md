@@ -7,7 +7,6 @@ tags:
   - "eggs"
   - "year-round"
   - "american"
-  - "cakes, quick breads, and muffins"
 source: "https://theviewfromgreatisland.com/pistachio-cardamom-pound-cake/?utm_source=Pinterest&utm_medium=organic"
 servings: "10, 10 servings"
 prep_time: "15 min"

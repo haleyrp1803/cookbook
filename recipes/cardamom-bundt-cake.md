@@ -6,8 +6,6 @@ tags:
   - "vegetarian"
   - "eggs"
   - "year-round"
-  - "international"
-  - "cakes, quick breads, and muffins"
 source: "https://vintagekitchennotes.com/cardamom-bundt-cake-saffron/?utm_source=Pinterest&utm_medium=organic"
 servings: "10, 10 servings"
 prep_time: "20 min"

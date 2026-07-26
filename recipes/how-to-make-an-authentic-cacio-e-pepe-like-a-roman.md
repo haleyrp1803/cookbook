@@ -7,7 +7,6 @@ tags:
   - "pasta"
   - "year-round"
   - "italian"
-  - "pasta, noodles, gnocchi, and orzo"
 source: "https://pinabresciani.com/authentic-cacio-e-pepe-recipe/?utm_source=Pinterest&utm_medium=organic"
 servings: "2, 2 people"
 prep_time: "10 min"

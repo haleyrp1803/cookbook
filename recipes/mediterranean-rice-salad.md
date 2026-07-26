@@ -12,7 +12,6 @@ tags:
   - "summer"
   - "under 1 hour"
   - "mediterranean"
-  - "salads"
 source: "https://hungryhealthyhappy.com/mediterranean-rice-salad/?utm_source=Pinterest&utm_medium=organic"
 servings: "8, 8 servings"
 prep_time: "10 min"

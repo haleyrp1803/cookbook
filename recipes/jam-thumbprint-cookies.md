@@ -7,7 +7,6 @@ tags:
   - "autumn"
   - "winter"
   - "american"
-  - "cookies and other desserts"
 source: "https://www.spendwithpennies.com/jam-thumbprint-cookies/?utm_source=Pinterest&utm_medium=organic"
 servings: "32, 32 cookies"
 prep_time: "20 min"

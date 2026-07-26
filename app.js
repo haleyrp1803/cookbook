@@ -18,6 +18,8 @@ let currentRecipeId = null;
 let currentView = 'library';
 let libraryScrollY = 0;
 let routeChangeInProgress = false;
+let recipeRailCollapsed = window.matchMedia('(min-width: 851px) and (max-width: 1150px)').matches;
+let lastOpenedRecipeId = null;
 const recipeDetailCache = new Map();
 
 function unquote(value) {
@@ -354,17 +356,25 @@ function renderLists() {
   });
 }
 
+function focusLastOpenedRecipe() {
+  if (!lastOpenedRecipeId) return;
+  const card = libraryGrid.querySelector(`.card[data-id="${CSS.escape(lastOpenedRecipeId)}"]`);
+  if (card) card.focus({ preventScroll: true });
+}
+
 function showLibrary(options = {}) {
-  const { restoreScroll = true, scrollY = libraryScrollY } = options;
+  const { restoreScroll = true, scrollY = libraryScrollY, restoreFocus = true } = options;
   currentView = 'library';
   currentRecipeId = null;
   readerView.hidden = true;
+  readerView.classList.remove('rail-collapsed');
   libraryView.hidden = false;
   document.title = "Haley's Recipe Book";
   renderLists();
 
   requestAnimationFrame(() => {
     window.scrollTo({ top: restoreScroll ? scrollY : 0, behavior: 'auto' });
+    if (restoreFocus) focusLastOpenedRecipe();
   });
 }
 
@@ -389,6 +399,7 @@ function rememberLibraryScroll() {
 
 function navigateToRecipe(recipe, options = {}) {
   const { replace = false } = options;
+  lastOpenedRecipeId = recipe.id;
   if (currentView === 'library') rememberLibraryScroll();
 
   const state = {
@@ -447,26 +458,6 @@ function handleRouteChange() {
   routeChangeInProgress = false;
 }
 
-function pinRecipeSidebar() {
-  const sidebar = reader.querySelector('.recipe-sidebar');
-  if (!sidebar || window.innerWidth <= 850) return;
-
-  sidebar.classList.remove('is-pinned');
-  sidebar.style.removeProperty('--pinned-top');
-  sidebar.style.removeProperty('--pinned-left');
-  sidebar.style.removeProperty('--pinned-width');
-
-  const rect = sidebar.getBoundingClientRect();
-  sidebar.style.setProperty('--pinned-top', `${rect.top}px`);
-  sidebar.style.setProperty('--pinned-left', `${rect.left}px`);
-  sidebar.style.setProperty('--pinned-width', `${rect.width}px`);
-  sidebar.classList.add('is-pinned');
-}
-
-function refreshPinnedSidebar() {
-  if (currentView !== 'reader') return;
-  requestAnimationFrame(pinRecipeSidebar);
-}
 
 async function fetchRecipeDetails(recipe) {
   if (recipeDetailCache.has(recipe.id)) {
@@ -495,6 +486,29 @@ async function fetchRecipeDetails(recipe) {
   };
   recipeDetailCache.set(recipe.id, details);
   return details;
+}
+
+function updateRecipeRailState() {
+  const isMobile = window.matchMedia('(max-width: 850px)').matches;
+  readerView.classList.toggle('rail-collapsed', !isMobile && recipeRailCollapsed);
+
+  const toggle = reader.querySelector('[data-rail-toggle]');
+  if (!toggle) return;
+  toggle.hidden = isMobile;
+  toggle.setAttribute('aria-expanded', String(!recipeRailCollapsed));
+  toggle.textContent = recipeRailCollapsed ? 'Show recipe list' : 'Hide recipe list';
+}
+
+function toggleRecipeRail() {
+  recipeRailCollapsed = !recipeRailCollapsed;
+  updateRecipeRailState();
+  reader.querySelector('[data-rail-toggle]')?.focus();
+}
+
+function bindRecipeRailToggle() {
+  const toggle = reader.querySelector('[data-rail-toggle]');
+  if (toggle) toggle.addEventListener('click', toggleRecipeRail);
+  updateRecipeRailState();
 }
 
 function recipeNavigationMarkup(recipe) {
@@ -531,8 +545,9 @@ function bindRecipeNavigation(recipe) {
 function renderRecipe(details) {
   reader.innerHTML = `
     <div class="recipe-header">
+      <button class="rail-toggle" type="button" data-rail-toggle aria-controls="recipeRail">Hide recipe list</button>
       <div class="category">${escapeHtml(details.category)}</div>
-      <h1 class="recipe-title">${escapeHtml(details.title)}</h1>
+      <h1 class="recipe-title" tabindex="-1">${escapeHtml(details.title)}</h1>
       ${recipeNavigationMarkup(details)}
     </div>
     <div class="recipe-layout">
@@ -559,10 +574,12 @@ function renderRecipe(details) {
 
   document.title = `${details.title} · Haley's Recipe Book`;
   bindRecipeNavigation(details);
-  requestAnimationFrame(() => requestAnimationFrame(pinRecipeSidebar));
+  bindRecipeRailToggle();
+  requestAnimationFrame(() => reader.querySelector('.recipe-title')?.focus({ preventScroll: true }));
 }
 
 async function openRecipe(recipe) {
+  lastOpenedRecipeId = recipe.id;
   currentView = 'reader';
   currentRecipeId = recipe.id;
   libraryView.hidden = true;
@@ -618,7 +635,7 @@ function handleFilterChange() {
 clearFilters.addEventListener('click', clearAllFilters);
 homeButton.addEventListener('click', () => navigateToLibrary());
 backButton.addEventListener('click', () => navigateToLibrary());
-window.addEventListener('resize', refreshPinnedSidebar);
+window.addEventListener('resize', updateRecipeRailState);
 window.addEventListener('popstate', handleRouteChange);
 window.addEventListener('hashchange', handleRouteChange);
 window.addEventListener('pagehide', rememberLibraryScroll);

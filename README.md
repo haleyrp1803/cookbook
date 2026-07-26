@@ -95,3 +95,12 @@ py .\scripts\build_recipe_index.py
 ```
 
 The scraper applies the same normalization rules to newly imported recipes. Review new tags as part of the normal import audit; dietary tags should not be inferred unless the source explicitly supports them.
+
+
+## Reader layout and accessibility
+
+The recipe image and At a Glance card are ordinary document content. They are neither fixed nor sticky, and they do not create a nested scrolling region; they move out of view naturally as the page scrolls.
+
+On wide and intermediate desktop layouts, the recipe-list rail can be shown or hidden from the open recipe. On screens 850 pixels wide or narrower, the rail is omitted from reader view so the currently opened recipe appears immediately below the site header. The All recipes control returns to the full library.
+
+Opening a recipe moves keyboard focus to its title. Returning to the library restores focus to the recipe card that was opened when that card remains in the current filtered result set. Loading states, errors, and result counts are exposed to assistive technology.

@@ -50,10 +50,10 @@
   </section>
 
   <div class="reader-view" id="readerView" hidden>
-    <aside class="recipe-rail" aria-label="Recipe list">
+    <aside class="recipe-rail" id="recipeRail" aria-label="Recipe list">
       <div class="rail-heading">
         <button class="back-button" id="backButton" type="button">← All recipes</button>
-        <p class="count" id="railCount"></p>
+        <p class="count" id="railCount" aria-live="polite"></p>
       </div>
       <div class="cards" id="cards"></div>
     </aside>
